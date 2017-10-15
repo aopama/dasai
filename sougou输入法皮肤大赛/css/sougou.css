@@ -1,0 +1,250 @@
+/*
+ * Copyright @ UI.CN 
+ * Data: 2015-03-02
+ * By: Sogou
+ */
+
+/*public*/
+body{overflow-x:hidden;background-color: #514290;}
+.sg_warp .h1{font-size: 24px;color: #fff;}
+.sg_warp .h2{font-size: 22px;color: #fff;}
+.sg_warp .h3{font-size: 22px;color: #fff;}
+.sg_warp .h4{color: #fff;font:18px/1.5 "Microsoft Yahei","Helvetica Neue";}
+.sg_warp .h5{font-size: 12px;color: #fff;}
+.sg_warp .h6{font-size: 20px;color: #fff;}
+
+.p_win{margin-top: -60px;margin-bottom: 20px;}
+.p_win1{margin-top: -50px;margin-bottom: 20px;}
+.p_win2{margin-top: -35px;margin-bottom: 20px;}
+.p_win3{margin-top: -65px;margin-bottom: 20px;}
+.ellipsis {
+    display: block; 
+    overflow: hidden; 
+    white-space: nowrap; 
+    text-overflow: ellipsis; 
+}
+
+/*单个作品展示*/
+.cont_list>ul>li{margin-right: 50px;margin-bottom: 55px; padding: 28px 22px; width:286px;background:rgba(0,0,0,0.3);filter:alpha(opacity=30);display: inline-block;border-radius: 15px;}
+.cont_list>ul>li .top{background:#8650cf; width: 280px;height: 212px;overflow: hidden;border-radius:15px;display: inline-block;}
+.cont_list>ul>li .top img{width: 100%;height: 100%;}
+.cont_list>ul>li .bot p{text-align: left;   display: block; 
+    overflow: hidden; 
+    white-space: nowrap; 
+    text-overflow: ellipsis; }
+
+/*公用导航头部*/
+.banner {position:relative;min-width:1180px; margin: 0 auto; height:481px; background: url("../sougou/banner.jpg") no-repeat center center; }
+.head_bg{position:relative;min-width:1180px;text-align: center; margin: 0 auto; height:210px; background: url("../sougou/head_bg.png") no-repeat center center; }
+.head_bg ul{display: inline-block;padding-top: 40px;margin-left: -40px;}
+.head_bg ul li{float: left;width: 277px;}
+.head_bg ul li a{width:233px;height: 87px;display: inline-block;}
+.head_bg ul li a.index0{background: url(../sougou/btn.png) 15px 0px no-repeat;}
+.head_bg ul li a.index1{background: url(../sougou/btn.png) 15px -95px no-repeat;margin-right: 44px;}
+.head_bg ul li a.index2{background: url(../sougou/btn.png) 15px -195px no-repeat;margin-right:44px;}
+.head_bg ul li a.index3{background: url(../sougou/btn.png) 15px -295px no-repeat;}
+/*点击状态*/
+.head_bg ul li.on a.index0{background: url(../sougou/btn_h.png) 0px 0px no-repeat;margin-right: 28px;}
+.head_bg ul li.on a.index1{background: url(../sougou/btn_h.png) 0px -95px no-repeat;margin-right:38px;}
+.head_bg ul li.on a.index2{background: url(../sougou/btn_h.png) 0px -195px no-repeat;margin-right:38px;}
+.head_bg ul li.on a.index3{background: url(../sougou/btn_h.png) 0px -295px no-repeat;}
+
+.title{width: 100%;}
+.title span{width: 327px;height: 70px;display: inline-block;position: relative;}
+.title span em{width:58px;height: 4px; background: #6c4ab3;position: absolute;bottom: 0;left: 50%;margin-left: -29px;display: inline-block; }
+/*右侧菜单*/
+.sg_warp .menu{width:156px;height: 356px;background:url(../sougou/right_btn.png) no-repeat;position: absolute;left:50%;margin-left:560px; top:0;z-index: 99; }
+.sg_warp .menu.fixd{position:fixed!important;top:20px!important;}
+.sg_warp .menu.fixd0{position:fixed!important;top:20px!important;right: 0;}
+.sg_warp .menu .up{position: absolute;top:65px;left: 10px;z-index: 1;width:138px;height:138px;border-radius: 50%;}
+.sg_warp .menu .down{position: absolute;top:225px;left: 10px;z-index: 1;width:138px;height:138px;border-radius: 50%;}
+/*奖品说明*/
+.cont_1920{max-width: 1920px; margin: 0 auto;text-align: center;}
+@media screen and (max-width: 1000px) {
+    .cont_1920{display: inline-block;}
+}
+
+/************************************************首页***********************************************/
+
+.gold_note{background:url(../sougou/bg.png) repeat;}
+.gold_note .tip p{line-height: 2.3;}
+.gold_note .tip p em{border-bottom:2px solid #98ff12;padding-bottom:5px;}
+.gold_note .tip span{position: absolute;top:-30px;left:305px; width: 62px;height: 69px;display: inline-block;background: url(../sougou/fc.png) no-repeat;}
+.gold_note .title{padding-top: 40px;}
+.gold_note .title span{background:url(../sougou/title_bg.png) 50px 0px no-repeat;}
+.gold_note ul{display: inline-block;padding-top: 50px;padding-bottom: 40px;}
+.gold_note ul li{width: 320px; float: left;}
+.gold_note ul li.on{margin-right: 110px;}
+.gold_note ul li.ml{margin-left: 220px;}
+.gold_note ul li .down{display: inline-block;}
+.gold_note ul li .icon-warn2{font-size: 34px;color:#5effee;cursor: pointer;padding-top: 2px;}
+/*鼠标滑入*/
+.gold_note ul li .down .icon-warn2:hover .cont_{ opacity: 1;visibility: visible;transition:all .3s;}
+.gold_note ul li .down .cont_{visibility:hidden;opacity:0; position: absolute;text-align: left; top:59px;left: -150px;z-index:100;padding:24px;background: rgba(61,51,103,0.95);filter:alpha(opacity=95);display: inline-block;border-radius: 15px; }
+.gold_note ul li .down .cont_:before{content: "";  position: absolute;top:-9px;left: 50%;margin-left: -9px; width: 0px;height: 0px;border-left: 12px solid transparent;border-right: 12px solid transparent;border-bottom: 12px solid rgba(61,51,103,0.95);}
+.gold_note ul li .down .cont_ p em{color:#5effee; }
+.gold_note ul li .down .cont_ .list_1{width: 278px;}/*578 left-300*/
+
+
+.gold_note ul li .cont{height:25px;}
+.gold_note ul li>p>span{width:42px;height: 1px;background:#5cb3a9;display: inline-block;}
+/*流程说明*/
+.flow_note{background:url(../sougou/flow_bg.png) repeat;height:393px;}
+.flow_note .title{padding-top: 30px;}
+.flow_note .title span{background:url(../sougou/title_bg.png) 37px -78px no-repeat;height: 80px;}
+.flow_note .cont{background: url(../sougou/flow_cont.png) no-repeat;width: 1064px;height: 151px;display: inline-block;margin-top: 50px;}
+/*评委*/
+.rater{background:url(../sougou/bg.png) repeat;}
+.rater .title{padding-top: 30px;}
+.rater .title span{background:url(../sougou/title_bg.png) 27px -190px no-repeat;height: 90px;}
+.rater ul{padding-bottom: 20px; display: inline-block;padding-top: 40px;}
+.rater ul li{margin-bottom: 40px; margin-right: 53px; float: left;background:rgba(0,0,0,0.3);filter:alpha(opacity=30);border-radius: 144px;width: 323px;padding:8px 10px 5px 10px;}
+.rater ul li.on{margin-right: 0;}
+.rater ul li .cont .left img{width: 144px;}
+.rater ul li .cont .right {width: 165px;padding-top: 18px;}
+.rater ul li .cont .right .sp span{margin-bottom: 5px; display: inline-block;width: 38px;height: 1px;background:#4e8d89;}
+/*优秀作品*/
+.good_work{background:url(../sougou/flow_bg.png) repeat;}
+.good_work .title{padding-top: 30px;}
+.good_work .title span{background:url(../sougou/title_bg.png) 27px -290px no-repeat;height: 90px;}
+.good_work .cont_list ul{display: inline-block;padding-top: 40px;}
+.good_work .cont_list ul li.on{margin-right: 0;}
+.good_work .more{display: inline-block;width: 176px;height: 58px;border-radius: 60px;text-align: center;line-height: 58px;font-size: 26px;font-family: "幼圆"; border: 2px solid #4ee4b1;color: #4ee4b1;background: none;}
+.good_work .QQ{font-size:18px;color:#4ee4b1;padding-top: 40px; }
+.good_work .by{margin-bottom: 60px; width:1078px;height: 168px;background: rgba(0,0,0,0.3);filter:alpha(opacity=30); display: inline-block;border-radius: 15px;margin-top: 60px;}
+.good_work .by>div{display: inline-block;margin-top: 56px;}
+.good_work .by .left{margin-right: 68px;}
+/*底部*/
+.footer{width: 100%;height: 135px;text-align: center;}
+.footer .icon-uimini{font-size: 77px;display: inline-block;color: #514290;margin-top: -25px;padding-bottom: 20px;}
+.footer.on .icon-uimini{color: #3d3367;}
+
+/************************************************ 大赛规则 ***********************************************/
+
+.rule{background:url(../sougou/bg.png) repeat;}
+/*标题*/
+.titles{width:383px;height: 90px;}
+.rule .hd_time{background: url(../sougou/rule/rule_title.png) 0px 0px no-repeat;}
+.rule .hd_set{background: url(../sougou/rule/rule_title.png) 0px -110px no-repeat;}
+.rule .hd_ask{background: url(../sougou/rule/rule_title.png) 0px -210px no-repeat;}
+.rule .hd_standard{background: url(../sougou/rule/rule_title.png) 0px -345px no-repeat;}
+.rule .hd_Notice{background: url(../sougou/rule/rule_title.png) 0px -445px no-repeat;}
+.rule .hd_win{background: url(../sougou/rule/rule_title.png) 0px -590px no-repeat;height: 110px;margin-left: -40px;}
+
+.rule .note{text-align: left;}
+.rule .note>p{padding-top: 15px;padding-left: 40px;}
+.rule .note>p>span{padding-bottom: 5px; font-size: 22px;color: #b3ff4f;border-bottom:2px solid #628ec0; }
+.rule .note>p>em{font-size: 22px;color: #fff;}
+.rule .note>p>b{font-size: 16px;color: #fff;font-weight: normal;}
+
+.rule .set{text-align: left;margin-left:60px;margin-top: -20px; }
+/*设计要求*/
+.rule .warp {text-align: left;padding-bottom: 60px;padding-top: 30px;}
+.rule .warp.ptv{padding-top:0px;}
+.rule .warp.mg{margin-top: -20px;}
+.rule .warp>p{width: 1070px; position:relative;font-size:22px;color: #fff;line-height: 2;padding-left: 40px;text-indent: 40px;}
+.rule .warp>p>span{position:absolute;top:0px;left:40px;width:33px;height: 40px;}
+.rule .warp>p>span.s1{background: url(../sougou/rule/xuhao.png) 0px 1px no-repeat;}
+.rule .warp>p>span.s2{background: url(../sougou/rule/xuhao.png) 0px -35px no-repeat;}
+.rule .warp>p>span.s3{background: url(../sougou/rule/xuhao.png) 0px -75px no-repeat;}
+.rule .warp>p>span.s4{background: url(../sougou/rule/xuhao.png) 0px -120px no-repeat;}
+.rule .warp>p>span.s5{background: url(../sougou/rule/xuhao.png) 0px -165px no-repeat;}
+.rule .warp>p>span.s6{background: url(../sougou/rule/xuhao.png) 0px -210px no-repeat;}
+/*评选标准*/
+.standard .cy{width:405px;height: 78px;background: url(../sougou/rule/cy.png) no-repeat;margin-left: 40px;}
+/*参赛须知*/
+/*获奖须知*/
+
+/************************************************ 设计要求 ***********************************************/
+
+/*奖品说明*/
+.ds_ask{background:url(../sougou/bg.png) repeat;}
+.tab_mini{ width:847px;height:214px;display: inline-block;background: url(../sougou/rule/tab_mini.png) no-repeat;}
+.tab_mini ul li{margin-right: 65px; padding-top: 35px;display: inline-block;}
+.tab_mini ul li:last-child{margin-right: 0;}
+.tab_mini ul li a{width: 130px;height: 130px;display: inline-block;border-radius: 50%;float: left; }
+
+
+.ds_ask .head_0{width:523px;height: 146px;background: url(../sougou/rule/dg_ask.png) no-repeat;display: inline-block; }
+.ds_ask ul.list{display: inline-block;padding-top: 30px;padding-bottom: 60px;}
+.ds_ask ul.list li{float: left;width: 245px;margin-right: 50px;}
+.ds_ask ul.list li.on{margin-right:0px;}
+.ds_ask ul.list li .img{width: 245px;height: 241px;display: inline-block;}
+.ds_ask ul.list li .img_1{background: url(../sougou/rule/img_01.png) no-repeat;}
+.ds_ask ul.list li .img_2{background: url(../sougou/rule/img_02.png) no-repeat;}
+.ds_ask ul.list li .img_3{background: url(../sougou/rule/img_03.png) no-repeat;}
+.ds_ask ul.list li .img_4{background: url(../sougou/rule/img_04.png) no-repeat;}
+.ds_ask ul.list li>p{padding-top: 30px;}
+.ds_ask ul.list li>p>em{color:#5effee;}
+/* 皮肤介绍*/
+.Skin{background:url(../sougou/flow_bg.png) repeat;}
+.skin_title>p>span{display: inline-block; width: 215px;height:64px;margin-top: 60px;}
+.skin_js>p>span{background: url(../sougou/rule/adk_title.png) 38px 0px no-repeat;}
+.Skin .tip{font-size: 22px;color: #fff;line-height: 2.5;padding-top: 10px;}
+.Skin .tip>p>em{border-bottom: 1px solid #98ff12;display: inline-block;line-height: 1.8;}
+.skin_zs{margin-top: 43px;margin-bottom: 80px; width: 793px;height: 766px;display: inline-block;background: url(../sougou/rule/skin.png) no-repeat;}
+/*比赛上传内容*/
+.Upload{background:url(../sougou/bg.png) repeat;}
+.Upload_title>p>span{background: url(../sougou/rule/adk_title.png) 0px -88px no-repeat;}
+.Upload .tip{line-height: 2;}
+.Upload .tip .p1{font-size: 26px;color: #98ff12;}
+.Upload .tip>p{font-size: 22px;color:#fff;}
+.Upload .skin_btn{padding-top: 45px;}
+.Upload .skin_btn>a{width: 310px;height:58px;border:2px solid #4ee4b1;color: #4ee4b1;border-radius: 60px;display: inline-block;text-align: center;line-height: 58px;font-size: 26px;font-family:"幼圆";}
+.Upload .skin_btn>a.down{margin-right: 55px;}
+.Upload .list_bg{padding-top: 54px;}
+.Upload .list_bg>div{width:326px;height:267px;display: inline-block;padding-bottom: 60px;}
+.Upload .list_bg>div.left{background: url(../sougou/rule/9j.png) no-repeat;margin-right: 55px;}
+.Upload .list_bg>div.right{background: url(../sougou/rule/26j.png) no-repeat;}
+
+/************************************************ 作品展示 参赛作品 ***********************************************/
+
+.show_time{background:url(../sougou/bg.png) repeat;}
+.show_time .show_title{width: 774px;height: 164px;display: inline-block;background: url(../sougou/rule/show_title.png) no-repeat;}
+.show_title>a{width:243px;height: 120px;display: inline-block;position: absolute;z-index: 1;top:25px;}
+.show_title .entries{left:-5px;background:url(../sougou/rule/cansai.png) 30px 0px no-repeat;} 
+.show_title .winning{right:-10px;background:url(../sougou/rule/cansai.png) 30px -125px no-repeat;} 
+.show_title .entries.on{left:-10px;top:15px; background:url(../sougou/rule/cansai.png) 0px -260px no-repeat;} 
+.show_title .winning.on{right:-5px;top:5px; background:url(../sougou/rule/cansai.png) 0px -380px no-repeat;} 
+/*列表*/
+.show_time .cont_list ul{padding-top: 50px;padding-bottom: 5px; position: relative;left:25px;}
+/*分页*/
+.show_time .min_page{padding-bottom: 45px;}
+.show_time .min_page li a{color: #fff;background: none;border: 1px solid #fff;border-radius:5px; }
+.show_time .min_page li a:hover,
+.show_time .min_page li a.on{color: #332c4f;background: #5effee;border: 1px solid #5effee;}
+.show_time .min_page li.pt a{border: none;}
+.show_time .min_page li.pt a:hover{border: none;color: #fff;background: none;}
+.show_time .min_page li.next a{border: 1px solid #5bd9db;background: none;}
+.show_time .min_page li.next a .icon-next{color: #5bd9db; }
+.show_time .min_page li.next a .icon-prev{color: #5bd9db; }
+.show_time .form_page .page_input{color: #fff;}
+/*获奖作品展示*/
+.show_win{background:url(../sougou/bg.png) repeat;}
+.show_win .show_title{width: 774px;height: 164px;display: inline-block;background: url(../sougou/rule/show_win.png) no-repeat;}
+
+.title_win{width: 467px;height: 110px;display: inline-block;}
+.title_win>em{font-size: 24px;color: #fff;display: inline-block;padding-top: 65px;}
+.title_win.tit_1{background: url(../sougou/rule/win_title.png)35px 10px no-repeat;margin-top: 30px;margin-bottom: 20px;}
+.title_win.tit_2{background: url(../sougou/rule/win_title.png)30px -105px no-repeat;margin-top: 30px;margin-bottom: 20px;}
+.title_win.tit_3{background: url(../sougou/rule/win_title.png)45px -236px no-repeat;margin-bottom: 20px;}
+.title_win.tit_4{background: url(../sougou/rule/win_title.png)5px -380px no-repeat;margin-left: 20px; margin-bottom: 20px;}
+.title_win.tit_5{background: url(../sougou/rule/win_title.png)45px -490px no-repeat;margin-bottom: 40px;}
+
+
+/*1等奖*/
+.show_win .cont_01 ul li{padding: 0;width: auto;margin-bottom: 0;}
+.show_win .cont_01 ul li .top{width: 1075px;height: 300px; }
+.show_win .cont_01 ul li .bot{padding-left: 25px;padding-bottom:20px; }
+/*2等奖*/
+.title_win.tit_2 em{padding-top:75px;}
+.cont_02>ul{position: relative;left:25px;}
+/*3等奖*/
+.title_win.tit_3 em{padding-top:50px;}
+.cont_03>ul{position: relative;left:25px;}
+/*4等奖*/
+.title_win.tit_4 em{padding-top:70px;}
+.cont_04>ul{position: relative;left:25px;}
+/*5等奖*/
+.title_win.tit_5 em{padding-top:60px;}
+.cont_05>ul{position: relative;left:25px;}

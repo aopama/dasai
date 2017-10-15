@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="renderer" content="webkit">
+    <title>年度盛典</title>
+    <link rel="stylesheet" href="http://s5.ui.cn/css/all/uicn.v1.css">
+    <link rel="stylesheet" href="http://s5.ui.cn/fonts/iconfont.css">
+    <!-- 导航 -->
+    <link rel="stylesheet" href="http://s6.ui.cn/css/all/header.v1.css?v=1452507006">
+    <script src="http://s2.ui.cn/js/jquery.js?v=1452507006"></script>
+    <script src="http://s2.ui.cn/js/home/header.v1.js?v=1452507006"></script>
+    <!-- 内容 -->
+    <link rel="stylesheet" href="css/choujiang.css">
+    <script type="text/javascript" src="js/choujiang.js"></script>
+    <!-- 抽奖 -->
+    <script type="text/javascript" src="js/jquery-1.11.0.js"></script>
+    <script type="text/javascript" src="js/animateBackground-plugin.js"></script>
+    <script type="text/javascript" src="js/easing.js"></script>
+    <script>
+    function numRand() {
+        var x = 999; //上限
+        var y = 111; //下限
+        var rand = parseInt(Math.random() * (x - y + 1) + y);
+        return rand;
+    }
+    var isBegin = false,
+        amounts = 10,  //还有 amounts 次机会；
+        getGift = false; //是否中奖；
+    $(function(){
+        var u = 129;
+        $('.btn').click(function(){
+            if(amounts <= 0 | getGift){
+                return false;
+            }else {
+                //防止动画进行时再次点击；
+                if(isBegin) return false;
+                //剩余机会；
+                amounts--;
+                $('#amounts').html(amounts);
+
+                //计算结果
+                isBegin = true;
+                $(".num").css('background-position', '0px 0px');
+                var result = numRand();
+                console.log(result);//结果
+                 result=121;
+                var num_arr = (result+'').split('');
+
+                $(".num").each(function(index){
+                    console.log(index);
+                    var _num = $(this);
+                    var yPos = (u*60) - (u*num_arr[index])+139;
+                    console.log(yPos);
+                    console.log(num_arr);
+                    console.log(num_arr[index]);
+                    setTimeout(function(){
+                        _num.animate({ 
+                            backgroundPosition: '0px ' + yPos + 'px'
+                        },{
+                            duration: 6000+index*3000,
+                            easing: "easeInOutCirc",
+                            complete: function(){
+                                if(index==2) isBegin = false;
+                            }
+                        });
+                    }, index * 300);
+                });
+                //判断是否中奖；
+                getGift = (num_arr[0]==num_arr[1]) &&(num_arr[0]==num_arr[2]);
+                if(getGift){
+                    $(this).off('click');
+                }
+            }
+            // alert(result)
+        }); 
+
+    });
+    </script>
+</head>
+<body>
+    <div class="bg-white">
+        <div class="wpn cl bg-white">
+            <a class="icon-uimini logo-hd" href="http://www.ui.cn/" title="UI中国"></a>
+            <ul class="nav-hd cl">
+                <li id="nav-index" class="on"><a href="http://www.ui.cn/" class="">首页</a></li>
+                <li id="nav-work">
+                    <a href="http://www.ui.cn/list.html" target="_self" class="">作品																			</a>
+                </li>
+                <li id="nav-exp">
+                    <a href="http://www.ui.cn/exp.html" target="_self" class="">学习							<i class="icon-down"></i>												</a>
+                    <div class="subnav-hd cl" style="display: none;">
+                        <ul class="subnav-ct-hd">
+                            <li>
+                                <a href="http://topic.ui.cn/" target="_self" class="">专题</a>
+                            </li>
+                            <li>
+                                <a href="http://www.ui.cn/exp.html?scatid=11" target="_blank" class="">教程</a>
+                            </li>
+                            <li>
+                                <a href="http://read.ui.cn" target="_self" class="">书籍</a>
+                            </li>
+                            <li>
+                                <a href="http://study.ui.cn/" target="_self" class="">每周临摹</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <a href="http://activity.ui.cn/" target="_self">活动							<i class="icon-down"></i>												</a>
+                    <div class="subnav-hd cl">
+                        <ul class="subnav-ct-hd">
+                            <li>
+                                <a href="http://activity.ui.cn/utalk.html" target="_self">UTalk</a>
+                            </li>
+                            <li>
+                                <a href="http://activity.ui.cn/game.html" target="_self">设计大赛</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <a href="http://zhaopin.ui.cn/" target="_self" class="">招聘																			</a>
+                </li>
+                <li>
+                    <a href="http://peixun.ui.cn/" target="_self">培训													<em class="new-hd"></em>						</a>
+                </li>
+                <li>
+                    <a href="javascript:;" target="_self">更多							<i class="icon-down"></i>												</a>
+                    <div class="subnav-hd cl">
+                        <ul class="subnav-ct-hd">
+                            <li>
+                                <a href="http://idea.ui.cn/" target="_self">灵感</a>
+                            </li>
+                            <li>
+                                <a href="http://tool.ui.cn/" target="_self">工具</a>
+                            </li>
+                            <li>
+                                <a href="http://talk.ui.cn/" target="_self">话题</a>
+                            </li>
+                            <li>
+                                <a href="http://mi.ui.cn/" target="_blank">主题学院</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+            <div class="y cl">
+                <div class="search-hd cl">
+                    <form action="http://s.ui.cn/index.html" method="get" id="searchForm">
+                        <div class="search-status">
+                            <div class="search-filter">
+                                <a href="javascript:;"><span class="tit">作品</span><i class="icon-down"></i></a>
+                                <ul class="options">
+                                    <li><a href="javascript:;" data-rel="project">作品</a></li>
+                                    <li><a href="javascript:;" data-rel="experience">文章</a></li>
+                                    <li><a href="javascript:;" data-rel="source">源文件</a></li>
+                                    <li><a href="javascript:;" data-rel="designer">设计师</a></li>
+                                    <li><a href="javascript:;" data-rel="inspiration">灵感</a></li>
+                                    <li><a href="javascript:;" data-rel="talk">话题</a></li>
+                                </ul>
+                            </div>
+                            <div class="search-select">
+                                <input type="text" class="search-val" placeholder="请输入您要查找的内容" autocomplete="off" value="" name="keywords" id="keywords">
+                                <ul class="options">
+                                    <li><a href="javascript:;">app</a></li>
+                                    <li><a href="javascript:;">icon</a></li>
+                                    <li><a href="javascript:;">简历</a></li>
+                                    <li><a href="javascript:;">元旦</a></li>
+                                    <li><a href="javascript:;">banner</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <input type="hidden" name="type" value="project" id="sType">
+                        <a class="search-hd-btn" href="javascript:;"><i class="icon-search"></i></a>
+                    </form>
+                </div>
+                <div class="login-hd">
+                    <a href="http://ui.cn/login.html">
+                        <i class="icon-user"></i>登录</a>
+                </div>
+            </div>
+            <!--</div> header -->
+        </div>
+        <!-- wpn -->
+    </div>
+    <!-- 内容 -->
+    <div class="warp">
+        <div class="menu on1 ">
+            <ul>
+                <li >
+                    <a href="javascript:;" title="" target="blank">
+                        上传作品
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:;" title="" target="blank">
+                        上传文章
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:;" title="" target="blank">
+                        完善简历
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:;" title="" target="blank">
+                        看看培训
+                    </a>
+                </li>
+            </ul>
+            <p>与朋友一起分享</p>
+            <div class="share">
+                <div class="share_main cl">
+                   <a class="xinlang" href="javascript:;" title="" target="blank">  
+                   </a>
+                   <a class="weixin" href="javascript:;" title="分享朋友圈">
+                        <div class="img">
+                            <div class="img_box">
+                                 <img src="/twocode" alt="" >
+                            </div>
+                            <div class="arrow-shadow"></div>
+                        </div>
+                   </a>
+                </div>
+            </div>
+        </div>
+        <div class="warp_top">
+                <p class="p1">
+                    值此辞旧迎新之际，UI中国感恩广大会员的一路陪伴。
+                </p>
+                <p>
+                     在新的一年里，UI中国希望能给大家提供更多的服务与回馈，也希望大家在猴年一如既往地支持UI中国，并让UI中国伴随大家继续成长。
+                </p>
+                <p class="tit">
+                    UI中国好礼贺新春，活动期间我们将送出众多大礼回馈广大会员，希望大家在猴年都能运气满满，心想事成！
+                </p>
+        </div>
+        <div class="warp_rule">
+            <p class="title">抽奖规则</p>
+            <p class="p1">在活动期间 UI中国用户 可以通过</p>
+            <ul class="cl">
+                <li class="on0">
+                    <div class="top">
+                        <img src="choujiang/icon0.png" alt="">
+                    </div>
+                    <div class="down">
+                        成功发布 1 篇
+                        新作品或文章
+                    </div>
+                </li>
+                <li class="on1">
+                    <div class="top">
+                        <img src="choujiang/icon1.png" alt="">
+                    </div>
+                    <div class="down">
+                        简历完整度
+                        80% 以上
+                    </div>
+                </li>
+                <li class="on2">
+                    <div class="top">
+                        <img src="choujiang/icon2.png" alt="">
+                    </div>
+                    <div class="down">
+                        报名培训机构学习
+                        每支付成功 1 次
+                    </div>
+                </li>
+            </ul>
+            <p class="p2">每完成以上任何一项就可获得一次抽奖机会</p>
+            <p class="p3">可获取的抽奖次数不限，奖品多多，希望大家拿奖拿到手抽筋！</p>
+        </div>
+        <div class="warp_main">
+            <div class="warp_main01">
+                <p class="title">让手气飞</p>
+                <p class="p1">活动时间：2016.1.29－2016.2.18</p>
+                <marquee class="scroll" direction="right" onMouseOver="this.stop()" onMouseOut="this.start()" scrollamount="5" width="900px">
+                    <a href="javascript:;" title="获奖名单" target="_blank">
+                        小芳获得一等奖&nbsp;&nbsp;&nbsp;小明获得二等奖小芳获得一等奖&nbsp;&nbsp;&nbsp;小明获得二等奖小芳获得一等奖&nbsp;&nbsp;&nbsp;小明获得二等奖
+                    </a> 
+                </marquee>
+                <div class="choujiang">
+                    <div class="top cl">
+                        <div class="left z">
+                            <div class="num_box">
+                                <div class="num" style="background-position: 0px 128px;"></div>
+                                <div class="num" style="background-position: 0px 257px;"></div>
+                                <div class="num" style="background-position: 0px 386px;"></div>
+                            </div>
+                        </div>
+                        <div class="right z">
+                            <p>
+                                <em class="e1">一等奖</em>
+                                <em class="e2">百度影棒2S+ </em>
+                                <em class="e3">1 名</em>
+                            </p>
+                            <p>
+                                <em class="e1">二等奖</em>
+                                <em class="e2">360智能摄像机 </em>
+                                <em class="e3">2 名</em>
+                            </p>
+                            <p>
+                                <em class="e1">三等奖</em>
+                                <em class="e2">小米电源 </em>
+                                <em class="e3">3 名</em>
+                            </p>
+                            <p>
+                                <em class="e1">幸运奖</em>
+                                <em class="e2">猴年礼  </em>
+                                <em class="e3">100 名</em>
+                            </p>
+                            <p>
+                                <em class="e4">UI中国福气礼包</em>
+                                <em class="e5">100 个</em>
+                            </p>
+                            <p>
+                                <em class="e4">UI中国开心小礼包</em>
+                                <em class="e5">200 个</em>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="bot">
+                        <ul class="cl">
+                            <li>
+                                <img src="choujiang/jp1.png" alt="">
+                                <p>百度影棒2S+</p>
+                            </li>
+                            <li>
+                                <img src="choujiang/jp2.png" alt="">
+                                <p>360智能摄像机</p>
+                            </li>
+                            <li>
+                                <img src="choujiang/jp3.png" alt="">
+                                <p>小米电源</p>
+                            </li>
+                            <li>
+                                <img src="choujiang/jp4.png" alt="">
+                                <p>猴年礼</p>
+                            </li>
+                            <li class="on">
+                                <a class="btn" href="javascript:;" title="">
+                                    
+                                </a>
+                                <p>
+                                    剩余<em id="amounts"> 10</em> 次机会
+                                </p>
+                            </li>
+                        </ul>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="warp_main02">
+                <div class="bg"></div>
+                <div  class="comment">
+                    <div class="rule">
+                        <p class="h1">
+                            抽奖机中出现 <em>3</em> 个相同图片，则中相应奖项
+                        </p>
+                        <p class="cont">    
+                            没抽到奖品的同学还有机会获得UI中国阳光普照小礼哦～
+                        </p>
+                    </div>
+                    <div class="comment_top cl">
+                        <a href="javascript:;" title="" class="portrait z">
+                            <img src="choujiang/head.png" alt="">
+                        </a>
+                        <form action="" method="get">
+                            <div class="input z">
+                                <input type="text" name="" value="" placeholder="">
+                            </div>
+                            <div class="save z">
+                                <button type="">发表</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="comment_list">
+                        <ul>
+                            <li class="cl">
+                                <div class="main z">
+                                    <div class="portrait z">
+                                        <img src="choujiang/head.png" alt="">
+                                    </div>
+                                    <div class="p1 z">
+                                        阿贾克斯的解放军俺是快乐的减肥了卡机苏打绿开飞机来喀什的减肥了空间阿里开始的积分离开
+                                    </div>
+                                    <em class="z">(2016/1/24)</em>
+                                </div>
+                                <a href="javascript:;" title="" class="zan z">
+                                    <i class="icon-leaf" title="点赞数"></i>
+                                    <em>1</em>
+                                </a>
+                            </li>
+                            <li class="cl">
+                                <div class="main z">
+                                    <div class="portrait z">
+                                        <img src="choujiang/head.png" alt="">
+                                    </div>
+                                    <div class="p1 z">
+                                        阿贾克斯的解放军俺是快乐的减肥了卡机苏打绿开飞机来喀什的减肥了空间阿里开始的积分离开
+                                    </div>
+                                    <em class="z">(2016/1/24)</em>
+                                </div>
+                                <a href="javascript:;" title="" class="zan z">
+                                    <i class="icon-leaf" title="点赞数"></i>
+                                    <em>1</em>
+                                </a>
+                            </li>
+                            <li class="cl">
+                                <div class="main z">
+                                    <div class="portrait z">
+                                        <img src="choujiang/head.png" alt="">
+                                    </div>
+                                    <div class="p1 z">
+                                        阿贾克斯的解放军俺是快乐的减肥了卡机苏打绿开飞机来喀什的减肥了空间阿里开始的积分离开
+                                    </div>
+                                    <em class="z">(2016/1/24)</em>
+                                </div>
+                                <a href="javascript:;" title="" class="zan z">
+                                    <i class="icon-leaf" title="点赞数"></i>
+                                    <em>1</em>
+                                </a>
+                            </li>
+                            <li class="cl">
+                                <div class="main z">
+                                    <div class="portrait z">
+                                        <img src="choujiang/head.png" alt="">
+                                    </div>
+                                    <div class="p1 z">
+                                        阿贾克斯的解放军俺是快乐的减肥了卡机苏打绿开飞机来喀什的减肥了空间阿里开始的积分离开
+                                    </div>
+                                    <em class="z">(2016/1/24)</em>
+                                </div>
+                                <a href="javascript:;" title="" class="zan z">
+                                    <i class="icon-leaf" title="点赞数"></i>
+                                    <em>1</em>
+                                </a>
+                            </li>
+                            <li class="cl">
+                                <div class="main z">
+                                    <div class="portrait z">
+                                        <img src="choujiang/head.png" alt="">
+                                    </div>
+                                    <div class="p1 z">
+                                        阿贾克斯的解放军俺是快乐的减肥了卡机苏打绿开飞机来喀什的减肥了空间阿里开始的积分离开
+                                    </div>
+                                    <em class="z">(2016/1/24)</em>
+                                </div>
+                                <a href="javascript:;" title="" class="zan z">
+                                    <i class="icon-leaf" title="点赞数"></i>
+                                    <em>1</em>
+                                </a>
+                            </li>
+                        </ul>
+                        <a href="javascript:;" title="" target="blank">点击查看更多</a>
+                    </div>
+                    <!-- <div class="bg">
+                        <a href="javascript:;" title="" target="blank">点击查看更多</a>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="logo">
+            <i class="icon-uimini"></i>
+        </div>
+    </div>
+   <!--  弹窗 -->
+    <div class="mask"></div>
+   <!-- 无抽奖次数 -->
+    <div class="none_box">
+        <div class="none_main">
+            <p>幸运之神降临UI中国，快去看看抽奖规则，获得抽奖机会，就有可能得到神之眷顾，会幸运一整年噢！还不赶快大装盘起来，好运转着就会来咯！</p>
+            <a href="javascript:;" title="">查看规则</a>
+        </div>
+    </div>
+    <!-- 未中奖 -->
+    <div class="not_win_box">
+        <div class="not_win_main cl">
+            <div class="close_box">
+                 <i class="icon-close"></i>
+             </div>
+            <p class="title">很 遗 憾，未 中 奖</p>
+            <p class="cont">
+                没抽到怎么办？闭上眼睛和我一起默念：“<em>心想事成！</em>”睁开眼，UI中国已将全年365天的好运气传递到你的心中，既然拥有了一整年的好运那就再抽一次吧~
+            </p>
+             <a href="javascript:;" title="">在来一次</a>
+        </div>
+    </div>
+<!-- 中奖 -->
+    <div class="win_box">
+        <div class="win_main">
+            <div class="close_box">
+                     <i class="icon-close"></i>
+            </div>
+            <p class="title">中奖啦</p>
+            <p class="cont">
+            金猴来送奖，福气喜气全部来！恭喜开年第一好运气，抽到 <em>什么什么</em>！赶快填写信息，把奖品领回家，让UI中国伴你猴年一路旺到底！”
+            </p>
+            <form action="" method="get">
+                <div class="cl">
+                    <div class="contacts z">
+                        <span class="z">姓名：</span>
+                        <div class="peo z">
+                            <input type="text" name="" value="" placeholder="">
+                        </div>
+                    </div>
+                    <div class="contacts_style z">
+                        <span class="z">电话：</span>
+                        <div class="peo z">
+                            <input type="text" name="" value="" placeholder="">
+                        </div>
+                    </div>
+                </div>
+                <div class="are cl">
+                    <span class="z">地址：</span>
+                    <div class="are_min z">
+                        <textarea name=""></textarea>
+                    </div>
+                </div>
+                <button type="submit">提交</button>
+            </form>
+        </div>
+    </div>
+    <!-- 点击提交 -->
+    <div class="save_box">
+        <div class="save_main">
+            <div class="close_box">
+                 <i class="icon-close"></i>
+             </div>
+             <p class="p1">我们会在活动结束7个工作日内与您</p>
+             <p class="p1"><em>确认地址</em> 并 <em>寄出礼品</em></p>
+             <div class="share cl">
+                <div class="left z">
+                     <a href="javascript:;" title="">分享到微博</a>
+                     <div class="p">
+                         <p>分享到微信</p>
+                         扫描右侧二维码<br>
+                        分享到微信朋友圈
+                     </div>
+                </div>
+                <div class="right z">
+                    <div class="img">
+                        <img src="choujiang/weixin0.png" alt="">
+                    </div>
+                </div>
+             </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,133 @@
+﻿/*!
+ * description: 美柚
+ * require: uicn.css
+ * relevancy: 
+ *
+ * date: 2016-08-22
+ * update: (2016-08-26)
+ */
+ body{ background-color: #f6f6f6;overflow-x:hidden; }
+ .wap_1920{ max-width: 1920px; margin:0 auto; }
+/*头部导航*/
+.banner{ min-width: 1180px; height:672px; background:url(../meiyou/banner.jpg) no-repeat top center; }
+/*导航*/
+.head{ height: 90px; border-bottom: 1px solid #e3e3e3; }
+.head .head_nav ul li{ float: left; }
+.head .head_nav ul li a{ font-size: 20px; color: #333; width: 110px; height:86px; display: inline-block; border-bottom: 4px solid  #f6f6f6; text-align:center; line-height:90px; } 
+.head .head_nav ul li a:hover,.head .head_nav ul li.on a{ cursor: pointer; border-bottom: 4px solid #ff548e; display: inline-block; color: #ff548e; /*background-image: -webkit-gradient(linear, 0 0, 0 bottom, from(rgba(255,255,255, 1)), to(rgba(255, 84, 142, 1))); -webkit-background-clip: text; -webkit-text-fill-color: transparent; */; }
+.head .head_nav ul span{ width: 50px; height:90px; background:url(../meiyou/nav_bg.png) no-repeat; display: inline-block; float: left; }
+.head .handle .nax{ height: 90px; line-height: 90px; text-align: center; color: #fff; font-size: 26px; float: left; width: 190px; cursor: pointer; }
+.head .handle .nax.up{ background: #fe88bf; background: -webkit-linear-gradient(#fe88bf, #db49c8); background: -moz-linear-gradient(#fe88bf, #db49c8); background: -o-linear-gradient(#fe88bf, #db49c8); background: linear-gradient(#fe88bf, #db49c8); }
+.head .handle .nax.down{ background: #8752ff; background: -webkit-linear-gradient(#8752ff, #6b24bb); background: -moz-linear-gradient(#8752ff, #6b24bb); background: -o-linear-gradient(#8752ff, #6b24bb); background: linear-gradient(#8752ff, #6b24bb); }
+/*导航结束*/
+/*----------------------------------------首页------------------------------------------*/
+.gas{ border-bottom: 1px solid #dddddd; padding-top:70px; padding-bottom: 55px; }
+.gas .title_ img{ margin-left:80px; width: 190px; height: 55px; }
+.gas .title_{ width:397px; }
+/*大赛引言*/
+.info .main{ margin-left:80px; }
+.info .main p{ line-height:40px; font-size:16px; color: #333; }
+/*大赛时间*/
+.time .erthb{ width: 223px; height: 223px; position: absolute; top:110px; left:-243px; background:url(../meiyou/erthb.png) no-repeat; }
+/*大赛奖项 */
+.prize .main .top_{ margin-bottom: 50px; }
+.prize .main .top_ ul li{ width:140px; margin-left: 74px; float: left; text-align: center; }
+.prize .main .top_ ul li:first-child{ margin-left: 0; }
+.prize .main .top_ ul li span{ font-size: 13px; color: #313131; padding-top: 10px; display: inline-block; }
+.prize .main .bot_ ul { width: 782px; }
+.prize .main .bot_ ul li{ float:left; width: 380px; margin-bottom: 25px; }
+.prize .main .bot_ ul li.on{ width:260px; }
+.prize .main .bot_ ul li.or{ width:140px; }
+.prize .main .bot_ ul li p{ font-size:14px; color: #313131; margin-left: 5px; }
+.prize .main .bot_ ul li p span{ font-size: 24px; color:#ff548e; display: inline-block; }
+.prize .main .bot_ ul li p em{ font-size:14px; color:#ff548e; display: inline-block; }
+/*大赛评审 */
+.review .main ul{ display: inline-block; width:782px; }
+.review .main ul li{ width: 195px; text-align: center; float:left; margin-right: 95px; margin-bottom: 60px; }
+.review .main ul li:nth-child(3n+0){ margin-right: 0px; }
+.review .main ul li .bot_d p{ font-size:18px; color: #313131; }
+.review .main ul li .bot_d .p1{ font-size: 24px; padding-top:15px; padding-bottom:5px; }
+.review .erths{ width:183px; height: 340px; display: inline-block; position: absolute; top:0; right: -275px; background:url(../meiyou/erths.png) no-repeat; }
+/*设计说明 */
+.Explain .main{ font-size: 16px; color:#333333; line-height: 2.5; }
+.Explain.mr .main{ margin-left: 80px; }
+.Explain .main em{ color:#ff548e; }
+.Explain .main p a{ color:#ff548e; font-size: 16px; text-decoration:underline; padding-top: 10px; display: inline-block; }
+/*组织机构*/
+.coop{ border-bottom: none; }
+.foot ul{ padding-top: 76px; padding-bottom: 76px; }
+.foot ul li{ margin-right: 60px; }
+.foot ul li .left{ font-size:16px; margin-right: 10px; color: #313131; line-height: 47px; }
+/*--------------------------------------------------------------活动详情页*/
+/*设计说明*/
+/*评审标准*/
+.standard .e1{ width:136px; height:136px; position: absolute; top:225px; right:-136px; background:url(../meiyou/e1.png) no-repeat; }
+/*参赛须知*/
+.Notice .e2{ width:66px; height:66px; position: absolute; top:373px; right:-226px; background:url(../meiyou/e2.png) no-repeat; }
+/*相关权益*/
+.interests .erthb{ width: 223px; height: 223px; position: absolute; top:290px; left:-243px; background:url(../meiyou/erthb.png) no-repeat; }
+/* 奖项通知 */
+/*联系我们*/
+.us{ border-bottom: none; }
+/*底部*/
+.footer{ text-align: center; }
+.footer ul{ display: inline-block; }
+.footer ul li:nth-child(2n+0){ margin-right: 0px; }
+/*--------------------------------------------------------------全部作品*/
+.list_cont{ padding-top:87px; }
+.list_cont ul li{ float: left; margin-right: 20px; margin-bottom: 80px; }
+.list_cont ul li:nth-child(4n+0){ margin-right: 0px; }
+.list_cont ul li .cont{ width: 280px; height: 250px; border-radius: 7px; background-color: #fff; box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.1); }
+.list_cont ul li .cont .top{ width: 280px; height: 210px; border-top-left-radius:7px; border-top-right-radius: 7px; overflow: hidden; }
+.list_cont ul li .cont .top img{ width: 100%; height: 100%; }
+
+.list_cont ul li .cont .bot{ height:40px; }
+.list_cont ul li .cont .classify { margin-top: 10px; float: left; height: 20px; margin-right: 10px; padding: 0 5px; font-size: 12px; color: #9aabb8; line-height: 19px; text-align: center; background-color: #dfe5e9; border-radius: 3px; }
+.list_cont ul li .cont .msg { overflow: hidden; line-height: 40px; float: right; }
+.list_cont ul li .cont .msg span { margin-right: 10px; display: inline-block; }
+.list_cont ul li .cont .msg span i { font-size: 14px; color: #9aabb8; margin-right: 5px; display: inline-block; line-height: 21px; vertical-align: middle; }
+.list_cont ul li .cont .msg span em { font-size: 12px; color: #9aabb8; display: inline-block; line-height: 21px; vertical-align: middle; }
+
+.list_cont ul li .use_{ padding-top: 15px; margin-left: 12px; width: 268px; }
+.list_cont ul li .use_ .head{ width: 24px; height: 24px; overflow: hidden; border-radius: 50%; margin-right:5px; }
+.list_cont ul li .use_ .head img{ width: 100%; height: 100%; }
+.list_cont ul li .use_ .name{ font-size: 16px; color: #333333; line-height: 24px; }
+
+.list_cont .ls1{display: none; width: 223px;height: 223px;position: absolute;top: 830px;left: -323px;background: url(../meiyou/erthb.png) no-repeat;}
+.list_cont .ls2{width:183px; height: 340px; display: inline-block; position: absolute; bottom:0; right: -250px; background:url(../meiyou/erths.png) no-repeat;display: none;}
+/*--------------------------------------------------------------关于美柚*/
+/*关于美柚*/
+.about{padding-top:70px;padding-bottom: 80px;border-bottom: 1px solid #dddddd;}
+.about .title_{width: 397px;}
+.about .title_ img{width: 190px;height: 55px;margin-left: 80px;}
+.about .main{line-height: 40px;font-size: 16px; color: #333;margin-left: 80px;}
+.about_cont{padding-top: 127px;}
+.about_cont .left{width: 585px;text-align: center;padding-top: 152px;}
+.about_cont .left .m1{width:280px;height: 140px; display: inline-block;margin-bottom: 105px;}
+.about_cont .left .m2{width: 148px;height: 175px; display: inline-block;}
+.about_cont .left .list{width: 430px;display: inline-block;margin-left: 15px;padding-top: 40px;}
+.about_cont .left .list ul li{float: left;margin-right:15px;width: 205px;font-size: 16px;color: #313131;}
+.about_cont .left .list ul li:nth-child(2n+0){margin-right: 0px;}
+.about_cont .left .list ul li>div{line-height: 25px;}
+.about_cont .left .list ul li em{margin-top: 10px;margin-right: 10px; float: left; width:5px;height: 5px;display: inline-block;background-color: #ff5073;border-radius: 50%;}
+.about_cont .left .list ul li span{float: left;}
+.about_cont .right .m3{width: 588px;height: 794px;}
+
+.about_cont .a_1{width: 223px; height: 223px; position: absolute; top:110px; left:-243px; background:url(../meiyou/erthb.png) no-repeat;}
+.about_cont .a_2{width:136px; height:136px; position: absolute; bottom: -200px; right:-136px; background:url(../meiyou/e1.png) no-repeat;}
+.fooa{padding:200px 0;}
+/*--------------------------------------------------------------获奖页面*/
+.warp_win {}
+.warp_win .timg{width:243px;height: 65px;} 
+.warp_win .first_p{padding-top: 80px;}
+.biglist{width: 100%;height: 500px;margin-top: 58px;border-radius: 7px;background-color: #fff;box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.1);}
+.biglist .top{width: 100%;height:420px;overflow: hidden;border-top-left-radius:7px;border-top-right-radius:7px;} 
+.biglist .top img{width: 100%;height: 100%;}
+.biglist .bot{width: 100%;height:80px; line-height: 80px;}
+.biglist .hert{margin-left: 20px;}
+.biglist .name{margin-right: 30px;}
+.biglist .bot .left{width: 30px;height: 30px;overflow: hidden;border-radius: 50%;margin-top: 25px;margin-right: 8px;}
+.biglist .bot .right{font-size: 22px;color: #333;}
+.biglist .name{font-size: 22px;color: #333;}
+.chuangyi{padding-top: 90px;}
+

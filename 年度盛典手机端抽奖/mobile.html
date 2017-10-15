@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"/>
+    <meta name="format-detection"content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <!-- 禁止数字转化为拨号链接
+    删除默认的苹果工具栏和菜单栏
+    状态栏背景显示黑色
+    -->
+    <title>年度盛典</title>
+    <link rel="stylesheet" href="http://s5.ui.cn/css/all/uicn.v1.css">
+    <link rel="stylesheet" href="http://s5.ui.cn/fonts/iconfont.css">
+    <!-- 内容 -->
+    <link rel="stylesheet" href="css/mobile.css">
+    <script type="text/javascript" src="js/mobile.js"></script>
+    <!-- 抽奖 -->
+   <script>
+            remFn(10);
+            window.onresize = function() {
+                remFn(10);
+            }
+            function remFn(num) {
+                document.documentElement.style.fontSize = document.documentElement.clientWidth / num + 'px';
+            }
+    </script>
+     <!-- 抽奖 111-->
+    <script type="text/javascript" src="js/jquery-1.11.0.js"></script>
+     <script type="text/javascript" src="js/animateBackground-plugin.js"></script>
+     <script type="text/javascript" src="js/easing.js"></script>
+    <script>
+    function numRand() {
+        var x = 999; //上限
+        var y = 111; //下限
+        var rand = parseInt(Math.random() * (x - y + 1) + y);
+        return rand;
+    }
+    var isBegin = false,
+        amounts = 10,  //还有 amounts 次机会；
+        getGift = false; //是否中奖；
+    $(function(){
+        var u = 60;
+        $('.btn').click(function(){
+            if(amounts <= 0 | getGift){
+                return false;
+            }else {
+                //防止动画进行时再次点击；
+                if(isBegin) return false;
+                //剩余机会；
+                amounts--;
+                $('#amounts').html(amounts);
+                //计算结果
+                isBegin = true;
+                 $(".num").css('background-position', '0px 0px');
+                var result = numRand();
+                result=126;
+                console.log(result);//结果··
+                // result=121;
+                var num_arr = (result+'').split('');
+                $(".num").each(function(index){
+                    var _num = $(this);
+                   var yPos = (u*60) - (u*num_arr[index])+120;
+                            var yPos=yPos-22.5;
+                             if(index==0){
+                                if(num_arr[index]==1||num_arr[index]==2){
+                                    var yPos=yPos+1;
+                                }
+                                if(num_arr[index]==6){
+                                    var yPos=yPos-1;
+                                }
+                            }
+                            if(index==1){
+                                if(num_arr[index]==1||num_arr[index]==2){
+                                    var yPos=yPos+1;
+                                }
+                                if(num_arr[index]==6){
+                                    var yPos=yPos-1;
+                                } 
+                            }
+                            if(index==2){
+                                if(num_arr[index]==1||num_arr[index]==2){
+                                    var yPos=yPos+1; 
+                                } 
+                                if(num_arr[index]==6){
+                                    var yPos=yPos-1;
+                                }
+                            }
+                    console.log(yPos);
+                    console.log(num_arr);
+                    console.log(num_arr[index]);
+                    setTimeout(function(){
+                        _num.animate({ 
+                            backgroundPosition: '0px ' + yPos + 'px'
+                        },{
+                            duration: 6000+index*3000,
+                            easing: "easeInOutCirc",
+                            complete: function(){
+                                if(index==2) isBegin = false;
+                            }
+                        });
+                    }, index * 300);
+                });
+                //判断是否中奖；
+                
+            }
+            // alert(result)
+        }); 
+
+    });
+    </script>
+</head>
+<body>
+<div class="container">
+<!--[if lt IE 9]><div class="alert alert-danger topframe" role="alert">你的浏览器实在<strong>太太太太太太旧了</strong>，放学别走，升级完浏览器再说<a target="_blank" class="alert-link" href="http://browsehappy.com">立即升级</a></div><![endif] -->
+    <div class="head_bg"></div>
+    <div class="head_0">
+        <p>UI中国 好礼贺新春</p>
+        <p>活动期间我们将送出众多大礼回馈广大会员</p>
+        <p>祝大家在猴年都能运气满满，心想事成！</p>
+    </div>
+    <!-- 头部end -->
+    <div class="rules_head">
+        <p>抽奖规则</p>
+    </div>
+    <div class="rules_cont">
+        <p class="h1">在活动期间 UI中国用户 可以通过</p>
+        <ul>
+            <li class="cl">
+                <i class="z icon-upload"></i>
+                <span class="z">成功发布 <b>1</b> 篇新作品或文章</span>
+            </li>
+            <li class="cl ">
+                <i class="z icon-res"></i>
+                <span class="z on1">简历完整度<b>80%</b>以上</span>
+            </li>
+            <li class="cl">
+                <i class="z icon-ok"></i>
+                <span class="z on2">报名培训机构学习每支付成功<b>1</b>次</span>
+            </li>
+        </ul>
+        <p class="cont">每完成以上任何一项就可获得一次抽奖机会</p>
+    </div>
+    <!--规则end -->
+    <div class="draw_head">
+        <p class="tip">可获取的抽奖次数不限，奖品多多希望大家拿奖拿到手抽筋！</p>
+        <p class="h1">让手气飞</p>
+    </div>
+    <div class="draw_cont">
+        <p class="time">活动时间：2016.1.29－2016.2.18</p>
+        <div class="choujiang">
+            <div class="num_box">
+                <div class="num" style="background-position: 0px 0px">
+                </div>
+                <div class="num" style="background-position: 0px 0px">
+                </div>
+                <div class="num" style="background-position: 0px 0px">
+                </div>
+            </div>
+        </div>
+        <p class="tip">抽奖机中出现3个相同图片，则中相应奖项</p>
+       <div class="save cl">
+           <!-- <a class="btn z" href="javascript:;" title="">
+               
+           </a>
+           <p class="z">
+              剩余<em id="amounts"> 10</em> 次机会
+           </p> -->
+           <a class="btn bg z" href="javascript:;" title="">
+           </a>
+           <p class="z">
+              请<em>&nbsp;登录&nbsp;</em>后抽奖
+           </p>
+       </div>
+    </div>
+    <!-- 抽奖end -->
+    <div class="footer">
+        <div class="list">
+            <div class="left">
+                <p>
+                    <em class="em1">一等奖</em>
+                    <em class="em2">百度影棒2S+ </em>
+                    <em class="em3">1 名</em>
+                </p>
+                <p>
+                    <em class="em1">二等奖</em>
+                    <em class="em2">360智能摄像机</em>
+                    <em class="em3">2 名</em>
+                </p>
+                <p>
+                    <em class="em1">三等奖</em>
+                    <em class="em2">小米电源</em>
+                    <em class="em3">3 名</em>
+                </p>
+                <p>
+                    <em class="em1">幸运奖</em>
+                    <em class="em2">猴年礼</em>
+                    <em class="em3">100 名</em>
+                </p>
+                 <p>
+                    <em class="em1">UI中国</em>
+                    <em class="em2">福气礼包</em>
+                    <em class="em3">100 名</em>
+                </p>
+                <p>
+                    <em class="em1">UI中国</em>
+                    <em class="em2">开心小礼包</em>
+                    <em class="em3">200 名</em>
+                </p>
+            </div>
+        </div>
+        <div class="list_u">
+            <ul class="cl">
+                <li class="on">
+                    <div class="img">
+                        <img src="moblie/bg_1.png" alt="">
+                    </div>
+                    <span>百度影棒2S+</span>
+                </li>
+                <li>
+                    <div class="img">
+                        <img src="moblie/bg_2.png" alt="">
+                    </div>
+                    <span>360智能摄像机</span>
+                </li>
+                <li class="on">
+                    <div class="img">
+                        <img src="moblie/bg_3.png" alt="">
+                    </div>
+                    <span>小米电源</span>
+                </li>
+                <li>
+                    <div class="img">
+                        <img src="moblie/bg_4.png" alt="">
+                    </div>
+                    <span>猴年礼</span>
+                </li>
+            </ul>
+        </div>
+        <p class="p1">没抽到奖品的同学还有机会获得UI中国阳光普照小礼哦～</p>
+        <div class="logo">
+            <i class="icon-uimini"></i>
+        </div>
+    </div>
+    <!-- 底部end -->
+    <!-- 弹框 -->
+    <div class="mask"></div>
+      <!-- 无抽奖次数 -->
+    <div class="none_box">
+        <div class="none_main">
+            <div class="close_box">
+                <i class="icon-close"></i>
+            </div>
+            <p>您还没有抽奖机会。</p>
+        </div>
+    </div>
+    <!-- 未中奖 -->
+    <div class="not_win_box">
+        <div class="not_win_main cl">
+            <div class="close_box">
+                 <i class="icon-close"></i>
+             </div>
+            <p class="title">很 遗 憾，未 中 奖</p>
+            <p class="p1">sorry～</p>
+            <p class="p2">没有中奖，再来一次吧！</p>
+           <!--  <a href="javascript:;" title="">查看规则</a> -->
+        </div>
+    </div>
+<!-- 中奖 -->
+    <div class="win_box">
+        <div class="win_main">
+            <div class="close_box">
+                     <i class="icon-close"></i>
+            </div>
+            <p class="title">中奖啦</p>
+            <p>恭喜您抽中了 <em>一等奖</em></p>
+            <p><em>百度影棒2S+ </em></p>
+            <p>填写信息，礼物到您家～</p>
+            <form action="" method="get">
+                <div class="cl">
+                    <div class="contacts z">
+                        <span class="z">姓名：</span>
+                        <div class="peo z">
+                            <input type="text" name="" value="" placeholder="">
+                        </div>
+                    </div>
+                    <div class="contacts_style z">
+                        <span class="z">电话：</span>
+                        <div class="peo z">
+                            <input type="text" name="" value="" placeholder="">
+                        </div>
+                    </div>
+                </div>
+                <div class="are cl">
+                    <span class="z">地址：</span>
+                    <div class="are_min z">
+                        <textarea name=""></textarea>
+                    </div>
+                </div>
+                <button type="submit">提交</button>
+            </form>
+        </div>
+    </div>
+    <!-- 点击提交 -->
+    <div class="save_box">
+        <div class="save_main">
+            <div class="close_box">
+                 <i class="icon-close"></i>
+             </div>
+             <p>我们会在活动结束的<br>7个工作日内与您</p>
+             <p><em>确认地址</em> 并 <em>寄出礼品</em></p>
+        </div>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,1869 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="renderer" content="webkit">
+	<title>年度盛典</title>
+	<link rel="stylesheet" href="http://s5.ui.cn/css/all/uicn.v1.css">
+    <link rel="stylesheet" href="http://s5.ui.cn/fonts/iconfont.css">
+	<link rel="stylesheet" href="css/festival_15.css">
+   
+    <!-- 导航 -->
+    <link rel="stylesheet" href="http://s6.ui.cn/css/all/header.v1.css?v=1452507006">
+    <script src="http://s2.ui.cn/js/jquery.js?v=1452507006"></script>
+    <script src="http://s2.ui.cn/js/home/header.v1.js?v=1452507006"></script>
+
+    <!-- 轮播 -->
+    <link rel="stylesheet" href="css/liMarquee.css">
+    <script src="js/jquery-1.8.3.min.js"></script>
+    <script src="js/jquery.liMarquee.js"></script>
+    <script> 
+		$(function(){
+			//候选设计团队
+			$('.team_list_cont').liMarquee({
+				runshort: false,//内容不足不滚动
+				direction: 'left',//方向
+				loop:-1,//循环次数
+				scrollamount:50,//滚动速度
+				circular:true,//无缝轮播
+				drag:true,//鼠标可以拖动
+				hoverstop:true,//鼠标悬停暂停
+				inverthover:false,//反向，即默认不滚动，鼠标悬停滚动
+			});
+			//候选设计师
+			$('.candidate_list_cont').liMarquee({
+				runshort: false,//内容不足不滚动
+			});
+			$('.candidate_list_contr').liMarquee({
+				direction: 'right',//方向
+				runshort: false,//内容不足不滚动
+			});
+			//培训机构
+			$('.training_list_cont').liMarquee({
+				 runshort: false,//内容不足不滚动
+			});
+		});
+	</script>
+	<!--   轮播 -->
+</head>
+<body>
+	<div class="bg-white">
+	<div class="wpn cl bg-white">
+			<a class="icon-uimini logo-hd" href="http://www.ui.cn/" title="UI中国"></a>
+			<ul class="nav-hd cl">
+				<li id="nav-index" class="on"><a href="http://www.ui.cn/" class="">首页</a></li>
+				<li id="nav-work">
+						<a href="http://www.ui.cn/list.html" target="_self" class="">作品																			</a>
+											</li><li id="nav-exp">
+						<a href="http://www.ui.cn/exp.html" target="_self" class="">学习							<i class="icon-down"></i>												</a>
+						<div class="subnav-hd cl" style="display: none;">
+								<ul class="subnav-ct-hd">
+								<li>
+										<a href="http://topic.ui.cn/" target="_self" class="">专题</a>
+									</li><li>
+										<a href="http://www.ui.cn/exp.html?scatid=11" target="_blank" class="">教程</a>
+									</li><li>
+										<a href="http://read.ui.cn" target="_self" class="">书籍</a>
+									</li><li>
+										<a href="http://study.ui.cn/" target="_self" class="">每周临摹</a>
+									</li>								</ul>
+							</div>					</li><li>
+						<a href="http://activity.ui.cn/" target="_self">活动							<i class="icon-down"></i>												</a>
+						<div class="subnav-hd cl">
+								<ul class="subnav-ct-hd">
+								<li>
+										<a href="http://activity.ui.cn/utalk.html" target="_self">UTalk</a>
+									</li><li>
+										<a href="http://activity.ui.cn/game.html" target="_self">设计大赛</a>
+									</li>								</ul>
+							</div>					</li><li>
+						<a href="http://zhaopin.ui.cn/" target="_self" class="">招聘																			</a>
+											</li><li>
+						<a href="http://peixun.ui.cn/" target="_self">培训													<em class="new-hd"></em>						</a>
+											</li><li>
+						<a href="javascript:;" target="_self">更多							<i class="icon-down"></i>												</a>
+						<div class="subnav-hd cl">
+								<ul class="subnav-ct-hd">
+								<li>
+										<a href="http://idea.ui.cn/" target="_self">灵感</a>
+									</li><li>
+										<a href="http://tool.ui.cn/" target="_self">工具</a>
+									</li><li>
+										<a href="http://talk.ui.cn/" target="_self">话题</a>
+									</li><li>
+										<a href="http://mi.ui.cn/" target="_blank">主题学院</a>
+									</li>								</ul>
+							</div>					</li>			</ul>
+			<div class="y cl">
+				<div class="search-hd cl">
+					<form action="http://s.ui.cn/index.html" method="get" id="searchForm">
+						<div class="search-status">
+							<div class="search-filter">
+								<a href="javascript:;"><span class="tit">作品</span><i class="icon-down"></i></a>							
+								<ul class="options">
+									<li><a href="javascript:;" data-rel="project">作品</a></li>
+									<li><a href="javascript:;" data-rel="experience">文章</a></li>
+									<li><a href="javascript:;" data-rel="source">源文件</a></li>
+									<li><a href="javascript:;" data-rel="designer">设计师</a></li>
+									<li><a href="javascript:;" data-rel="inspiration">灵感</a></li>
+									<li><a href="javascript:;" data-rel="talk">话题</a></li>
+								</ul>
+							</div>
+							<div class="search-select">
+								<input type="text" class="search-val" placeholder="请输入您要查找的内容" autocomplete="off" value="" name="keywords" id="keywords">
+								<ul class="options">
+									<li><a href="javascript:;">app</a></li><li><a href="javascript:;">icon</a></li><li><a href="javascript:;">简历</a></li><li><a href="javascript:;">元旦</a></li><li><a href="javascript:;">banner</a></li>								</ul>
+							</div>
+						</div>
+						<input type="hidden" name="type" value="project" id="sType">
+						<a class="search-hd-btn" href="javascript:;"><i class="icon-search"></i></a>
+					</form>
+				</div>
+				<div class="login-hd">
+						<a href="http://ui.cn/login.html">
+							<i class="icon-user"></i>登录</a>
+					</div>
+			 	
+			</div>
+			
+		<!--</div> header -->
+	</div><!-- wpn -->
+</div>
+<!-- 内容 -->
+	<div class="festival">
+		<div class="fest_bg">
+			<div class="fest_top01"></div>
+			<div class="fest_top02"></div>
+			<!-- 背景小块 -->
+			<div class="bg_warp">
+				<div class="main">
+					<div class="bg01"></div>
+					<div class="bg02"></div>
+					<div class="bg03"></div>
+					<div class="bg04"></div>
+					<div class="bg05"></div>
+					<div class="bg06"></div>
+				</div>
+			</div>
+			<!-- 内容 -->
+			<div class="warp">
+				<!-- 比赛流程 -->
+				<div class="flow">
+					<div class="title"></div>
+					<div class="cont">
+						<img src="images/festival_15/flow_bg.jpg" alt="">
+						<p>大众投票前报名，支持票数更多，心动不如行动，赶快报名吧！</p>
+					</div>
+				</div>
+				<!-- 候选设计团队 -->
+				<div class="team">
+					<div class="title"></div>
+					<div class="cont">
+						<p>
+							<b>参赛条件 ： </b>团队规模5人以上；在UI中国用户名为团队名称，在UI中国上有10个以上作品参考。
+						</p>
+						<p>
+							<b>获奖名额 ：</b> 入围团队20个，获奖团队10个。
+						</p>
+						<p>
+							<b>奖&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;励 ：</b> 招聘频道推荐，UI中国优秀设计团队荣誉，UI中国年度盛宴现场颁发的证书和奖杯。
+						</p>
+						<a href="javascript:;" class="team_parent" title="">申请优秀设计团队</a>
+					</div>
+					<div class="team_list">
+						<div class="team_list_cont">
+							<span>
+								<div class="bg">
+									<img src="images/festival_15/bg.jpg" alt="">
+								</div>
+								<div class="main" style="">
+									<a class="user_portrait" href="javascript:;" title="">
+										<img src="images/festival_15/head.jpg" alt="">
+									</a>
+									<p class="p1">啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊</p>
+										<em>
+											啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊
+										</em>
+								</div>
+							</span>
+							<span>
+								<div class="bg">
+									<img src="images/festival_15/bg.jpg" alt="">
+								</div>
+								<div class="main" style="">
+									<a class="user_portrait" href="javascript:;" title="">
+										<img src="images/festival_15/head.jpg" alt="">
+									</a>
+									<p class="p1">啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊</p>
+										<em>
+											啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊
+										</em>
+								</div>
+							</span>
+							<span>
+								<div class="bg">
+									<img src="images/festival_15/bg.jpg" alt="">
+								</div>
+								<div class="main" style="">
+									<a class="user_portrait" href="javascript:;" title="">
+										<img src="images/festival_15/head.jpg" alt="">
+									</a>
+									<p class="p1">啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊</p>
+										<em>
+											啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊
+										</em>
+								</div>
+							</span>
+							<span>
+								<div class="bg">
+									<img src="images/festival_15/bg.jpg" alt="">
+								</div>
+								<div class="main" style="">
+									<a class="user_portrait" href="javascript:;" title="">
+										<img src="images/festival_15/head.jpg" alt="">
+									</a>
+									<p class="p1">啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊</p>
+										<em>
+											啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊
+										</em>
+								</div>
+							</span>
+							<span>
+								<div class="bg">
+									<img src="images/festival_15/bg.jpg" alt="">
+								</div>
+								<div class="main" style="">
+									<a class="user_portrait" href="javascript:;" title="">
+										<img src="images/festival_15/head.jpg" alt="">
+									</a>
+									<p class="p1">啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊</p>
+										<em>
+											啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊
+										</em>
+								</div>
+							</span>
+						</div>
+						<div class="team_list_cont_z">
+								<ul class="cl list ">
+										<li>
+											<span class="cl">
+												<div class="bg">
+													<img src="images/festival_15/bg.jpg" alt="">
+												</div>
+												<div class="main" style="">
+													<a class="user_portrait" href="javascript:;" title="">
+														<img src="images/festival_15/head.jpg" alt="">
+													</a>
+													<p class="p1">啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊</p>
+														<em>
+															啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊
+														</em>
+												</div>
+											</span>
+											<span class="cl">
+												<div class="bg">
+													<img src="images/festival_15/bg.jpg" alt="">
+												</div>
+												<div class="main" style="">
+													<a class="user_portrait" href="javascript:;" title="">
+														<img src="images/festival_15/head.jpg" alt="">
+													</a>
+													<p class="p1">啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊</p>
+														<em>
+															啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊
+														</em>
+												</div>
+											</span>
+										</li>
+										<li>
+											<span class="cl">
+												<div class="bg">
+													<img src="images/festival_15/bg.jpg" alt="">
+												</div>
+												<div class="main" style="">
+													<a class="user_portrait" href="javascript:;" title="">
+														<img src="images/festival_15/head.jpg" alt="">
+													</a>
+													<p class="p1">啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊</p>
+														<em>
+															啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊
+														</em>
+												</div>
+											</span>
+											<span class="cl">
+												<div class="bg">
+													<img src="images/festival_15/bg.jpg" alt="">
+												</div>
+												<div class="main" style="">
+													<a class="user_portrait" href="javascript:;" title="">
+														<img src="images/festival_15/head.jpg" alt="">
+													</a>
+													<p class="p1">啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊</p>
+														<em>
+															啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊
+														</em>
+												</div>
+											</span>
+										</li>
+										<li>
+											<span class="cl">
+												<div class="bg">
+													<img src="images/festival_15/bg.jpg" alt="">
+												</div>
+												<div class="main" style="">
+													<a class="user_portrait" href="javascript:;" title="">
+														<img src="images/festival_15/head.jpg" alt="">
+													</a>
+													<p class="p1">啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊</p>
+														<em>
+															啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊
+														</em>
+												</div>
+											</span>
+											<span class="cl">
+												<div class="bg">
+													<img src="images/festival_15/bg.jpg" alt="">
+												</div>
+												<div class="main" style="">
+													<a class="user_portrait" href="javascript:;" title="">
+														<img src="images/festival_15/head.jpg" alt="">
+													</a>
+													<p class="p1">啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊</p>
+														<em>
+															啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊
+														</em>
+												</div>
+											</span>
+										</li>
+										<li>
+											<span class="cl">
+												<div class="bg">
+													<img src="images/festival_15/bg.jpg" alt="">
+												</div>
+												<div class="main" style="">
+													<a class="user_portrait" href="javascript:;" title="">
+														<img src="images/festival_15/head.jpg" alt="">
+													</a>
+													<p class="p1">啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊</p>
+														<em>
+															啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊
+														</em>
+												</div>
+											</span>
+											<span class="cl">
+												<div class="bg">
+													<img src="images/festival_15/bg.jpg" alt="">
+												</div>
+												<div class="main" style="">
+													<a class="user_portrait" href="javascript:;" title="">
+														<img src="images/festival_15/head.jpg" alt="">
+													</a>
+													<p class="p1">啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊</p>
+														<em>
+															啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊
+														</em>
+												</div>
+											</span>
+										</li>
+										<li>
+											<span class="cl">
+												<div class="bg">
+													<img src="images/festival_15/bg.jpg" alt="">
+												</div>
+												<div class="main" style="">
+													<a class="user_portrait" href="javascript:;" title="">
+														<img src="images/festival_15/head.jpg" alt="">
+													</a>
+													<p class="p1">啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊</p>
+														<em>
+															啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊
+														</em>
+												</div>
+											</span>
+											<span class="cl">
+												<div class="bg">
+													<img src="images/festival_15/bg.jpg" alt="">
+												</div>
+												<div class="main" style="">
+													<a class="user_portrait" href="javascript:;" title="">
+														<img src="images/festival_15/head.jpg" alt="">
+													</a>
+													<p class="p1">啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊</p>
+														<em>
+															啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊
+														</em>
+												</div>
+											</span>
+										</li>
+										<li>
+											<span class="cl">
+												<div class="bg">
+													<img src="images/festival_15/bg.jpg" alt="">
+												</div>
+												<div class="main" style="">
+													<a class="user_portrait" href="javascript:;" title="">
+														<img src="images/festival_15/head.jpg" alt="">
+													</a>
+													<p class="p1">啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊</p>
+														<em>
+															啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊
+														</em>
+												</div>
+											</span>
+											<span class="cl">
+												<div class="bg">
+													<img src="images/festival_15/bg.jpg" alt="">
+												</div>
+												<div class="main" style="">
+													<a class="user_portrait" href="javascript:;" title="">
+														<img src="images/festival_15/head.jpg" alt="">
+													</a>
+													<p class="p1">啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊</p>
+														<em>
+															啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊
+														</em>
+												</div>
+											</span>
+										</li>
+										<li>
+											<span class="cl">
+												<div class="bg">
+													<img src="images/festival_15/bg.jpg" alt="">
+												</div>
+												<div class="main" style="">
+													<a class="user_portrait" href="javascript:;" title="">
+														<img src="images/festival_15/head.jpg" alt="">
+													</a>
+													<p class="p1">啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊</p>
+														<em>
+															啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊
+														</em>
+												</div>
+											</span>
+											<span class="cl">
+												<div class="bg">
+													<img src="images/festival_15/bg.jpg" alt="">
+												</div>
+												<div class="main" style="">
+													<a class="user_portrait" href="javascript:;" title="">
+														<img src="images/festival_15/head.jpg" alt="">
+													</a>
+													<p class="p1">啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊</p>
+														<em>
+															啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊
+														</em>
+												</div>
+											</span>
+										</li>
+										<li>
+											<span class="cl">
+												<div class="bg">
+													<img src="images/festival_15/bg.jpg" alt="">
+												</div>
+												<div class="main" style="">
+													<a class="user_portrait" href="javascript:;" title="">
+														<img src="images/festival_15/head.jpg" alt="">
+													</a>
+													<p class="p1">啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊</p>
+														<em>
+															啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊
+														</em>
+												</div>
+											</span>
+											<span class="cl">
+												<div class="bg">
+													<img src="images/festival_15/bg.jpg" alt="">
+												</div>
+												<div class="main" style="">
+													<a class="user_portrait" href="javascript:;" title="">
+														<img src="images/festival_15/head.jpg" alt="">
+													</a>
+													<p class="p1">啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊</p>
+														<em>
+															啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊
+														</em>
+												</div>
+											</span>
+										</li>
+										<li>
+											<span class="cl">
+												<div class="bg">
+													<img src="images/festival_15/bg.jpg" alt="">
+												</div>
+												<div class="main" style="">
+													<a class="user_portrait" href="javascript:;" title="">
+														<img src="images/festival_15/head.jpg" alt="">
+													</a>
+													<p class="p1">啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊</p>
+														<em>
+															啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊
+														</em>
+												</div>
+											</span>
+											<span class="cl">
+												<div class="bg">
+													<img src="images/festival_15/bg.jpg" alt="">
+												</div>
+												<div class="main" style="">
+													<a class="user_portrait" href="javascript:;" title="">
+														<img src="images/festival_15/head.jpg" alt="">
+													</a>
+													<p class="p1">啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊</p>
+														<em>
+															啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊
+														</em>
+												</div>
+											</span>
+										</li>
+										<li>
+											<span class="cl">
+												<div class="bg">
+													<img src="images/festival_15/bg.jpg" alt="">
+												</div>
+												<div class="main" style="">
+													<a class="user_portrait" href="javascript:;" title="">
+														<img src="images/festival_15/head.jpg" alt="">
+													</a>
+													<p class="p1">啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊</p>
+														<em>
+															啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊
+														</em>
+												</div>
+											</span>
+											<span class="cl">
+												<div class="bg">
+													<img src="images/festival_15/bg.jpg" alt="">
+												</div>
+												<div class="main" style="">
+													<a class="user_portrait" href="javascript:;" title="">
+														<img src="images/festival_15/head.jpg" alt="">
+													</a>
+													<p class="p1">啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊</p>
+														<em>
+															啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊
+														</em>
+												</div>
+											</span>
+										</li>
+
+								</ul>
+							<ul class="nav_list cl">
+							</ul>
+						</div>
+						<div class="more more_0">
+									展开查看更多
+						</div>
+					</div>
+				</div>
+				<!-- 候选设计师 -->
+				<div class="candidate">
+					<div class="title"></div>
+					<div class="cont">
+						<p>
+							<b>参赛条件 ： </b>
+							UI中国用户，在UI中国上有15个以上作品参考。
+						</p>
+						<p>
+							<b>获奖名额 ：</b> 
+							入围设计师20人，获奖设计师10人
+						</p>
+						<p>
+							<b>奖&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;励 ：</b>  
+							UI中国年度优秀设计师荣誉，招聘频道优秀简历推荐。UI中国年度盛宴现场颁发的证书和奖杯。
+						</p>
+						<a href="javascript:;" class="designer_parent" title="">申请优秀设计师</a>
+					</div>
+					<div class="candidate_list">
+						<div class="candidate_list_cont">
+							<span>
+									<div class="img">
+										<img src="images/festival_15/head0.png" alt="">
+									</div>
+									<div class="right">
+										<p class="p1">申请优秀设请优秀设请优秀设计团队</p>
+										<p class="cont">撒旦发射点撒旦发射点撒旦发射点撒旦发射点撒旦发射点撒旦发射点射点</p>
+										<div class="arrow-shadow"></div>
+									</div>
+							</span>	
+							<span>
+									<div class="img">
+										<img src="images/festival_15/head0.png" alt="">
+									</div>
+									<div class="right">
+										<p class="p1">申请优秀设请优秀设请优秀设计团队</p>
+										<p class="cont">撒旦发射点撒旦发射点撒旦发射点撒旦发射点撒旦发射点撒旦发射点射点</p>
+										<div class="arrow-shadow"></div>
+									</div>
+							</span>	
+							<span>
+									<div class="img">
+										<img src="images/festival_15/head0.png" alt="">
+									</div>
+									<div class="right">
+										<p class="p1">申请优秀设请优秀设请优秀设计团队</p>
+										<p class="cont">撒旦发射点撒旦发射点撒旦发射点撒旦发射点撒旦发射点撒旦发射点射点</p>
+										<div class="arrow-shadow"></div>
+									</div>
+							</span>	
+							<span>
+									<div class="img">
+										<img src="images/festival_15/head0.png" alt="">
+									</div>
+									<div class="right">
+										<p class="p1">申请优秀设请优秀设请优秀设计团队</p>
+										<p class="cont">撒旦发射点撒旦发射点撒旦发射点撒旦发射点撒旦发射点撒旦发射点射点</p>
+										<div class="arrow-shadow"></div>
+									</div>
+							</span>	
+							<span>
+									<div class="img">
+										<img src="images/festival_15/head0.png" alt="">
+									</div>
+									<div class="right">
+										<p class="p1">申请优秀设请优秀设请优秀设计团队</p>
+										<p class="cont">撒旦发射点撒旦发射点撒旦发射点撒旦发射点撒旦发射点撒旦发射点射点</p>
+										<div class="arrow-shadow"></div>
+									</div>
+							</span>	
+							<span>
+									<div class="img">
+										<img src="images/festival_15/head0.png" alt="">
+									</div>
+									<div class="right">
+										<p class="p1">申请优秀设请优秀设请优秀设计团队</p>
+										<p class="cont">撒旦发射点撒旦发射点撒旦发射点撒旦发射点撒旦发射点撒旦发射点射点</p>
+										<div class="arrow-shadow"></div>
+									</div>
+							</span>	
+							<span>
+									<div class="img">
+										<img src="images/festival_15/head0.png" alt="">
+									</div>
+									<div class="right">
+										<p class="p1">申请优秀设请优秀设请优秀设计团队</p>
+										<p class="cont">撒旦发射点撒旦发射点撒旦发射点撒旦发射点撒旦发射点撒旦发射点射点</p>
+										<div class="arrow-shadow"></div>
+									</div>
+							</span>	
+							<span>
+									<div class="img">
+										<img src="images/festival_15/head0.png" alt="">
+									</div>
+									<div class="right">
+										<p class="p1">申请优秀设请优秀设请优秀设计团队</p>
+										<p class="cont">撒旦发射点撒旦发射点撒旦发射点撒旦发射点撒旦发射点撒旦发射点射点</p>
+										<div class="arrow-shadow"></div>
+									</div>
+							</span>	
+						</div>
+						<div class="candidate_list_contr">
+							<span>
+								<div class="img">
+									<img src="images/festival_15/head0.png" alt="">
+								</div>
+								<div class="right">
+									<p class="p1">申请优秀设请优秀设请优秀设计团队</p>
+									<p class="cont">撒旦发射点撒旦发射点撒旦发射点撒旦发射点撒旦发射点撒旦发射点射点</p>
+									<div class="arrow-shadow"></div>
+								</div>
+							</span>	
+							<span>
+								<div class="img">
+									<img src="images/festival_15/head0.png" alt="">
+								</div>
+								<div class="right">
+									<p class="p1">申请优秀设请优秀设请优秀设计团队</p>
+									<p class="cont">撒旦发射点撒旦发射点撒旦发射点撒旦发射点撒旦发射点撒旦发射点射点</p>
+									<div class="arrow-shadow"></div>
+								</div>
+							</span>	
+							<span>
+								<div class="img">
+									<img src="images/festival_15/head0.png" alt="">
+								</div>
+								<div class="right">
+									<p class="p1">申请优秀设请优秀设请优秀设计团队</p>
+									<p class="cont">撒旦发射点撒旦发射点撒旦发射点撒旦发射点撒旦发射点撒旦发射点射点</p>
+									<div class="arrow-shadow"></div>
+								</div>
+							</span>	
+							<span>
+								<div class="img">
+									<img src="images/festival_15/head0.png" alt="">
+								</div>
+								<div class="right">
+									<p class="p1">申请优秀设请优秀设请优秀设计团队</p>
+									<p class="cont">撒旦发射点撒旦发射点撒旦发射点撒旦发射点撒旦发射点撒旦发射点射点</p>
+									<div class="arrow-shadow"></div>
+								</div>
+							</span>	
+							<span>
+								<div class="img">
+									<img src="images/festival_15/head0.png" alt="">
+								</div>
+								<div class="right">
+									<p class="p1">申请优秀设请优秀设请优秀设计团队</p>
+									<p class="cont">撒旦发射点撒旦发射点撒旦发射点撒旦发射点撒旦发射点撒旦发射点射点</p>
+									<div class="arrow-shadow"></div>
+								</div>
+							</span>	
+							<span>
+								<div class="img">
+									<img src="images/festival_15/head0.png" alt="">
+								</div>
+								<div class="right">
+									<p class="p1">申请优秀设请优秀设请优秀设计团队</p>
+									<p class="cont">撒旦发射点撒旦发射点撒旦发射点撒旦发射点撒旦发射点撒旦发射点射点</p>
+									<div class="arrow-shadow"></div>
+								</div>
+							</span>	
+							<span>
+								<div class="img">
+									<img src="images/festival_15/head0.png" alt="">
+								</div>
+								<div class="right">
+									<p class="p1">申请优秀设请优秀设请优秀设计团队</p>
+									<p class="cont">撒旦发射点撒旦发射点撒旦发射点撒旦发射点撒旦发射点撒旦发射点射点</p>
+									<div class="arrow-shadow"></div>
+								</div>
+							</span>	
+							<span>
+								<div class="img">
+									<img src="images/festival_15/head0.png" alt="">
+								</div>
+								<div class="right">
+									<p class="p1">申请优秀设请优秀设请优秀设计团队</p>
+									<p class="cont">撒旦发射点撒旦发射点撒旦发射点撒旦发射点撒旦发射点撒旦发射点射点</p>
+									<div class="arrow-shadow"></div>
+								</div>
+							</span>	
+						</div>
+						<div class="candidate_list_cont_z">
+							<ul class="cl list">
+										<li>
+											<span>
+												<div class="img">
+													<img src="images/festival_15/head0.png" alt="">
+												</div>
+												<div class="right">
+													<p class="p1">申请优秀设请优秀设请优秀设计团队</p>
+													<p class="cont">撒旦发射点撒旦发射点撒旦发射点撒旦发射点撒旦发射点撒旦发射点射点</p>
+													<div class="arrow-shadow"></div>
+												</div>
+											</span>	
+											<span>
+												<div class="img">
+													<img src="images/festival_15/head0.png" alt="">
+												</div>
+												<div class="right">
+													<p class="p1">申请优秀设请优秀设请优秀设计团队</p>
+													<p class="cont">撒旦发射点撒旦发射点撒旦发射点撒旦发射点撒旦发射点撒旦发射点射点</p>
+													<div class="arrow-shadow"></div>
+												</div>
+											</span>	
+											<span>
+												<div class="img">
+													<img src="images/festival_15/head0.png" alt="">
+												</div>
+												<div class="right">
+													<p class="p1">申请优秀设请优秀设请优秀设计团队</p>
+													<p class="cont">撒旦发射点撒旦发射点撒旦发射点撒旦发射点撒旦发射点撒旦发射点射点</p>
+													<div class="arrow-shadow"></div>
+												</div>
+											</span>	
+											<span>
+												<div class="img">
+													<img src="images/festival_15/head0.png" alt="">
+												</div>
+												<div class="right">
+													<p class="p1">申请优秀设请优秀设请优秀设计团队</p>
+													<p class="cont">撒旦发射点撒旦发射点撒旦发射点撒旦发射点撒旦发射点撒旦发射点射点</p>
+													<div class="arrow-shadow"></div>
+												</div>
+											</span>	
+											<span>
+												<div class="img">
+													<img src="images/festival_15/head0.png" alt="">
+												</div>
+												<div class="right">
+													<p class="p1">申请优秀设请优秀设请优秀设计团队</p>
+													<p class="cont">撒旦发射点撒旦发射点撒旦发射点撒旦发射点撒旦发射点撒旦发射点射点</p>
+													<div class="arrow-shadow"></div>
+												</div>
+											</span>	
+											<span>
+												<div class="img">
+													<img src="images/festival_15/head0.png" alt="">
+												</div>
+												<div class="right">
+													<p class="p1">申请优秀设请优秀设请优秀设计团队</p>
+													<p class="cont">撒旦发射点撒旦发射点撒旦发射点撒旦发射点撒旦发射点撒旦发射点射点</p>
+													<div class="arrow-shadow"></div>
+												</div>
+											</span>	
+										</li>
+										<li>
+											<span>
+												<div class="img">
+													<img src="images/festival_15/head0.png" alt="">
+												</div>
+												<div class="right">
+													<p class="p1">申请优秀设请优秀设请优秀设计团队</p>
+													<p class="cont">撒旦发射点撒旦发射点撒旦发射点撒旦发射点撒旦发射点撒旦发射点射点</p>
+													<div class="arrow-shadow"></div>
+												</div>
+											</span>	
+											<span>
+												<div class="img">
+													<img src="images/festival_15/head0.png" alt="">
+												</div>
+												<div class="right">
+													<p class="p1">申请优秀设请优秀设请优秀设计团队</p>
+													<p class="cont">撒旦发射点撒旦发射点撒旦发射点撒旦发射点撒旦发射点撒旦发射点射点</p>
+													<div class="arrow-shadow"></div>
+												</div>
+											</span>	
+											<span>
+												<div class="img">
+													<img src="images/festival_15/head0.png" alt="">
+												</div>
+												<div class="right">
+													<p class="p1">申请优秀设请优秀设请优秀设计团队</p>
+													<p class="cont">撒旦发射点撒旦发射点撒旦发射点撒旦发射点撒旦发射点撒旦发射点射点</p>
+													<div class="arrow-shadow"></div>
+												</div>
+											</span>	
+											<span>
+												<div class="img">
+													<img src="images/festival_15/head0.png" alt="">
+												</div>
+												<div class="right">
+													<p class="p1">申请优秀设请优秀设请优秀设计团队</p>
+													<p class="cont">撒旦发射点撒旦发射点撒旦发射点撒旦发射点撒旦发射点撒旦发射点射点</p>
+													<div class="arrow-shadow"></div>
+												</div>
+											</span>	
+											<span>
+												<div class="img">
+													<img src="images/festival_15/head0.png" alt="">
+												</div>
+												<div class="right">
+													<p class="p1">申请优秀设请优秀设请优秀设计团队</p>
+													<p class="cont">撒旦发射点撒旦发射点撒旦发射点撒旦发射点撒旦发射点撒旦发射点射点</p>
+													<div class="arrow-shadow"></div>
+												</div>
+											</span>	
+											<span>
+												<div class="img">
+													<img src="images/festival_15/head0.png" alt="">
+												</div>
+												<div class="right">
+													<p class="p1">申请优秀设请优秀设请优秀设计团队</p>
+													<p class="cont">撒旦发射点撒旦发射点撒旦发射点撒旦发射点撒旦发射点撒旦发射点射点</p>
+													<div class="arrow-shadow"></div>
+												</div>
+											</span>	
+										</li>
+										<li>
+											<span>
+												<div class="img">
+													<img src="images/festival_15/head0.png" alt="">
+												</div>
+												<div class="right">
+													<p class="p1">申请优秀设请优秀设请优秀设计团队</p>
+													<p class="cont">撒旦发射点撒旦发射点撒旦发射点撒旦发射点撒旦发射点撒旦发射点射点</p>
+													<div class="arrow-shadow"></div>
+												</div>
+											</span>	
+											<span>
+												<div class="img">
+													<img src="images/festival_15/head0.png" alt="">
+												</div>
+												<div class="right">
+													<p class="p1">申请优秀设请优秀设请优秀设计团队</p>
+													<p class="cont">撒旦发射点撒旦发射点撒旦发射点撒旦发射点撒旦发射点撒旦发射点射点</p>
+													<div class="arrow-shadow"></div>
+												</div>
+											</span>	
+											<span>
+												<div class="img">
+													<img src="images/festival_15/head0.png" alt="">
+												</div>
+												<div class="right">
+													<p class="p1">申请优秀设请优秀设请优秀设计团队</p>
+													<p class="cont">撒旦发射点撒旦发射点撒旦发射点撒旦发射点撒旦发射点撒旦发射点射点</p>
+													<div class="arrow-shadow"></div>
+												</div>
+											</span>	
+											<span>
+												<div class="img">
+													<img src="images/festival_15/head0.png" alt="">
+												</div>
+												<div class="right">
+													<p class="p1">申请优秀设请优秀设请优秀设计团队</p>
+													<p class="cont">撒旦发射点撒旦发射点撒旦发射点撒旦发射点撒旦发射点撒旦发射点射点</p>
+													<div class="arrow-shadow"></div>
+												</div>
+											</span>	
+											<span>
+												<div class="img">
+													<img src="images/festival_15/head0.png" alt="">
+												</div>
+												<div class="right">
+													<p class="p1">申请优秀设请优秀设请优秀设计团队</p>
+													<p class="cont">撒旦发射点撒旦发射点撒旦发射点撒旦发射点撒旦发射点撒旦发射点射点</p>
+													<div class="arrow-shadow"></div>
+												</div>
+											</span>	
+											<span>
+												<div class="img">
+													<img src="images/festival_15/head0.png" alt="">
+												</div>
+												<div class="right">
+													<p class="p1">申请优秀设请优秀设请优秀设计团队</p>
+													<p class="cont">撒旦发射点撒旦发射点撒旦发射点撒旦发射点撒旦发射点撒旦发射点射点</p>
+													<div class="arrow-shadow"></div>
+												</div>
+											</span>	
+										</li>
+										<li>
+											<span>
+												<div class="img">
+													<img src="images/festival_15/head0.png" alt="">
+												</div>
+												<div class="right">
+													<p class="p1">申请优秀设请优秀设请优秀设计团队</p>
+													<p class="cont">撒旦发射点撒旦发射点撒旦发射点撒旦发射点撒旦发射点撒旦发射点射点</p>
+													<div class="arrow-shadow"></div>
+												</div>
+											</span>	
+											<span>
+												<div class="img">
+													<img src="images/festival_15/head0.png" alt="">
+												</div>
+												<div class="right">
+													<p class="p1">申请优秀设请优秀设请优秀设计团队</p>
+													<p class="cont">撒旦发射点撒旦发射点撒旦发射点撒旦发射点撒旦发射点撒旦发射点射点</p>
+													<div class="arrow-shadow"></div>
+												</div>
+											</span>	
+											<span>
+												<div class="img">
+													<img src="images/festival_15/head0.png" alt="">
+												</div>
+												<div class="right">
+													<p class="p1">申请优秀设请优秀设请优秀设计团队</p>
+													<p class="cont">撒旦发射点撒旦发射点撒旦发射点撒旦发射点撒旦发射点撒旦发射点射点</p>
+													<div class="arrow-shadow"></div>
+												</div>
+											</span>	
+											<span>
+												<div class="img">
+													<img src="images/festival_15/head0.png" alt="">
+												</div>
+												<div class="right">
+													<p class="p1">申请优秀设请优秀设请优秀设计团队</p>
+													<p class="cont">撒旦发射点撒旦发射点撒旦发射点撒旦发射点撒旦发射点撒旦发射点射点</p>
+													<div class="arrow-shadow"></div>
+												</div>
+											</span>	
+											<span>
+												<div class="img">
+													<img src="images/festival_15/head0.png" alt="">
+												</div>
+												<div class="right">
+													<p class="p1">申请优秀设请优秀设请优秀设计团队</p>
+													<p class="cont">撒旦发射点撒旦发射点撒旦发射点撒旦发射点撒旦发射点撒旦发射点射点</p>
+													<div class="arrow-shadow"></div>
+												</div>
+											</span>	
+											<span>
+												<div class="img">
+													<img src="images/festival_15/head0.png" alt="">
+												</div>
+												<div class="right">
+													<p class="p1">申请优秀设请优秀设请优秀设计团队</p>
+													<p class="cont">撒旦发射点撒旦发射点撒旦发射点撒旦发射点撒旦发射点撒旦发射点射点</p>
+													<div class="arrow-shadow"></div>
+												</div>
+											</span>	
+										</li>
+										<li>
+											<span>
+												<div class="img">
+													<img src="images/festival_15/head0.png" alt="">
+												</div>
+												<div class="right">
+													<p class="p1">申请优秀设请优秀设请优秀设计团队</p>
+													<p class="cont">撒旦发射点撒旦发射点撒旦发射点撒旦发射点撒旦发射点撒旦发射点射点</p>
+													<div class="arrow-shadow"></div>
+												</div>
+											</span>	
+											<span>
+												<div class="img">
+													<img src="images/festival_15/head0.png" alt="">
+												</div>
+												<div class="right">
+													<p class="p1">申请优秀设请优秀设请优秀设计团队</p>
+													<p class="cont">撒旦发射点撒旦发射点撒旦发射点撒旦发射点撒旦发射点撒旦发射点射点</p>
+													<div class="arrow-shadow"></div>
+												</div>
+											</span>	
+											<span>
+												<div class="img">
+													<img src="images/festival_15/head0.png" alt="">
+												</div>
+												<div class="right">
+													<p class="p1">申请优秀设请优秀设请优秀设计团队</p>
+													<p class="cont">撒旦发射点撒旦发射点撒旦发射点撒旦发射点撒旦发射点撒旦发射点射点</p>
+													<div class="arrow-shadow"></div>
+												</div>
+											</span>	
+											<span>
+												<div class="img">
+													<img src="images/festival_15/head0.png" alt="">
+												</div>
+												<div class="right">
+													<p class="p1">申请优秀设请优秀设请优秀设计团队</p>
+													<p class="cont">撒旦发射点撒旦发射点撒旦发射点撒旦发射点撒旦发射点撒旦发射点射点</p>
+													<div class="arrow-shadow"></div>
+												</div>
+											</span>	
+											<span>
+												<div class="img">
+													<img src="images/festival_15/head0.png" alt="">
+												</div>
+												<div class="right">
+													<p class="p1">申请优秀设请优秀设请优秀设计团队</p>
+													<p class="cont">撒旦发射点撒旦发射点撒旦发射点撒旦发射点撒旦发射点撒旦发射点射点</p>
+													<div class="arrow-shadow"></div>
+												</div>
+											</span>	
+											<span>
+												<div class="img">
+													<img src="images/festival_15/head0.png" alt="">
+												</div>
+												<div class="right">
+													<p class="p1">申请优秀设请优秀设请优秀设计团队</p>
+													<p class="cont">撒旦发射点撒旦发射点撒旦发射点撒旦发射点撒旦发射点撒旦发射点射点</p>
+													<div class="arrow-shadow"></div>
+												</div>
+											</span>	
+										</li>
+										<li>
+											<span>
+												<div class="img">
+													<img src="images/festival_15/head0.png" alt="">
+												</div>
+												<div class="right">
+													<p class="p1">申请优秀设请优秀设请优秀设计团队</p>
+													<p class="cont">撒旦发射点撒旦发射点撒旦发射点撒旦发射点撒旦发射点撒旦发射点射点</p>
+													<div class="arrow-shadow"></div>
+												</div>
+											</span>	
+											<span>
+												<div class="img">
+													<img src="images/festival_15/head0.png" alt="">
+												</div>
+												<div class="right">
+													<p class="p1">申请优秀设请优秀设请优秀设计团队</p>
+													<p class="cont">撒旦发射点撒旦发射点撒旦发射点撒旦发射点撒旦发射点撒旦发射点射点</p>
+													<div class="arrow-shadow"></div>
+												</div>
+											</span>	
+											<span>
+												<div class="img">
+													<img src="images/festival_15/head0.png" alt="">
+												</div>
+												<div class="right">
+													<p class="p1">申请优秀设请优秀设请优秀设计团队</p>
+													<p class="cont">撒旦发射点撒旦发射点撒旦发射点撒旦发射点撒旦发射点撒旦发射点射点</p>
+													<div class="arrow-shadow"></div>
+												</div>
+											</span>	
+											<span>
+												<div class="img">
+													<img src="images/festival_15/head0.png" alt="">
+												</div>
+												<div class="right">
+													<p class="p1">申请优秀设请优秀设请优秀设计团队</p>
+													<p class="cont">撒旦发射点撒旦发射点撒旦发射点撒旦发射点撒旦发射点撒旦发射点射点</p>
+													<div class="arrow-shadow"></div>
+												</div>
+											</span>	
+											<span>
+												<div class="img">
+													<img src="images/festival_15/head0.png" alt="">
+												</div>
+												<div class="right">
+													<p class="p1">申请优秀设请优秀设请优秀设计团队</p>
+													<p class="cont">撒旦发射点撒旦发射点撒旦发射点撒旦发射点撒旦发射点撒旦发射点射点</p>
+													<div class="arrow-shadow"></div>
+												</div>
+											</span>	
+											<span>
+												<div class="img">
+													<img src="images/festival_15/head0.png" alt="">
+												</div>
+												<div class="right">
+													<p class="p1">申请优秀设请优秀设请优秀设计团队</p>
+													<p class="cont">撒旦发射点撒旦发射点撒旦发射点撒旦发射点撒旦发射点撒旦发射点射点</p>
+													<div class="arrow-shadow"></div>
+												</div>
+											</span>	
+										</li>
+										<li>
+											<span>
+												<div class="img">
+													<img src="images/festival_15/head0.png" alt="">
+												</div>
+												<div class="right">
+													<p class="p1">申请优秀设请优秀设请优秀设计团队</p>
+													<p class="cont">撒旦发射点撒旦发射点撒旦发射点撒旦发射点撒旦发射点撒旦发射点射点</p>
+													<div class="arrow-shadow"></div>
+												</div>
+											</span>	
+											<span>
+												<div class="img">
+													<img src="images/festival_15/head0.png" alt="">
+												</div>
+												<div class="right">
+													<p class="p1">申请优秀设请优秀设请优秀设计团队</p>
+													<p class="cont">撒旦发射点撒旦发射点撒旦发射点撒旦发射点撒旦发射点撒旦发射点射点</p>
+													<div class="arrow-shadow"></div>
+												</div>
+											</span>	
+											<span>
+												<div class="img">
+													<img src="images/festival_15/head0.png" alt="">
+												</div>
+												<div class="right">
+													<p class="p1">申请优秀设请优秀设请优秀设计团队</p>
+													<p class="cont">撒旦发射点撒旦发射点撒旦发射点撒旦发射点撒旦发射点撒旦发射点射点</p>
+													<div class="arrow-shadow"></div>
+												</div>
+											</span>	
+											<span>
+												<div class="img">
+													<img src="images/festival_15/head0.png" alt="">
+												</div>
+												<div class="right">
+													<p class="p1">申请优秀设请优秀设请优秀设计团队</p>
+													<p class="cont">撒旦发射点撒旦发射点撒旦发射点撒旦发射点撒旦发射点撒旦发射点射点</p>
+													<div class="arrow-shadow"></div>
+												</div>
+											</span>	
+											<span>
+												<div class="img">
+													<img src="images/festival_15/head0.png" alt="">
+												</div>
+												<div class="right">
+													<p class="p1">申请优秀设请优秀设请优秀设计团队</p>
+													<p class="cont">撒旦发射点撒旦发射点撒旦发射点撒旦发射点撒旦发射点撒旦发射点射点</p>
+													<div class="arrow-shadow"></div>
+												</div>
+											</span>	
+											<span>
+												<div class="img">
+													<img src="images/festival_15/head0.png" alt="">
+												</div>
+												<div class="right">
+													<p class="p1">申请优秀设请优秀设请优秀设计团队</p>
+													<p class="cont">撒旦发射点撒旦发射点撒旦发射点撒旦发射点撒旦发射点撒旦发射点射点</p>
+													<div class="arrow-shadow"></div>
+												</div>
+											</span>	
+										</li>
+										<li>
+											<span>
+												<div class="img">
+													<img src="images/festival_15/head0.png" alt="">
+												</div>
+												<div class="right">
+													<p class="p1">申请优秀设请优秀设请优秀设计团队</p>
+													<p class="cont">撒旦发射点撒旦发射点撒旦发射点撒旦发射点撒旦发射点撒旦发射点射点</p>
+													<div class="arrow-shadow"></div>
+												</div>
+											</span>	
+											<span>
+												<div class="img">
+													<img src="images/festival_15/head0.png" alt="">
+												</div>
+												<div class="right">
+													<p class="p1">申请优秀设请优秀设请优秀设计团队</p>
+													<p class="cont">撒旦发射点撒旦发射点撒旦发射点撒旦发射点撒旦发射点撒旦发射点射点</p>
+													<div class="arrow-shadow"></div>
+												</div>
+											</span>	
+											<span>
+												<div class="img">
+													<img src="images/festival_15/head0.png" alt="">
+												</div>
+												<div class="right">
+													<p class="p1">申请优秀设请优秀设请优秀设计团队</p>
+													<p class="cont">撒旦发射点撒旦发射点撒旦发射点撒旦发射点撒旦发射点撒旦发射点射点</p>
+													<div class="arrow-shadow"></div>
+												</div>
+											</span>	
+											<span>
+												<div class="img">
+													<img src="images/festival_15/head0.png" alt="">
+												</div>
+												<div class="right">
+													<p class="p1">申请优秀设请优秀设请优秀设计团队</p>
+													<p class="cont">撒旦发射点撒旦发射点撒旦发射点撒旦发射点撒旦发射点撒旦发射点射点</p>
+													<div class="arrow-shadow"></div>
+												</div>
+											</span>	
+											<span>
+												<div class="img">
+													<img src="images/festival_15/head0.png" alt="">
+												</div>
+												<div class="right">
+													<p class="p1">申请优秀设请优秀设请优秀设计团队</p>
+													<p class="cont">撒旦发射点撒旦发射点撒旦发射点撒旦发射点撒旦发射点撒旦发射点射点</p>
+													<div class="arrow-shadow"></div>
+												</div>
+											</span>	
+											<span>
+												<div class="img">
+													<img src="images/festival_15/head0.png" alt="">
+												</div>
+												<div class="right">
+													<p class="p1">申请优秀设请优秀设请优秀设计团队</p>
+													<p class="cont">撒旦发射点撒旦发射点撒旦发射点撒旦发射点撒旦发射点撒旦发射点射点</p>
+													<div class="arrow-shadow"></div>
+												</div>
+											</span>	
+										</li>
+										<li>
+											<span>
+												<div class="img">
+													<img src="images/festival_15/head0.png" alt="">
+												</div>
+												<div class="right">
+													<p class="p1">申请优秀设请优秀设请优秀设计团队</p>
+													<p class="cont">撒旦发射点撒旦发射点撒旦发射点撒旦发射点撒旦发射点撒旦发射点射点</p>
+													<div class="arrow-shadow"></div>
+												</div>
+											</span>	
+											<span>
+												<div class="img">
+													<img src="images/festival_15/head0.png" alt="">
+												</div>
+												<div class="right">
+													<p class="p1">申请优秀设请优秀设请优秀设计团队</p>
+													<p class="cont">撒旦发射点撒旦发射点撒旦发射点撒旦发射点撒旦发射点撒旦发射点射点</p>
+													<div class="arrow-shadow"></div>
+												</div>
+											</span>	
+											<span>
+												<div class="img">
+													<img src="images/festival_15/head0.png" alt="">
+												</div>
+												<div class="right">
+													<p class="p1">申请优秀设请优秀设请优秀设计团队</p>
+													<p class="cont">撒旦发射点撒旦发射点撒旦发射点撒旦发射点撒旦发射点撒旦发射点射点</p>
+													<div class="arrow-shadow"></div>
+												</div>
+											</span>	
+											<span>
+												<div class="img">
+													<img src="images/festival_15/head0.png" alt="">
+												</div>
+												<div class="right">
+													<p class="p1">申请优秀设请优秀设请优秀设计团队</p>
+													<p class="cont">撒旦发射点撒旦发射点撒旦发射点撒旦发射点撒旦发射点撒旦发射点射点</p>
+													<div class="arrow-shadow"></div>
+												</div>
+											</span>	
+											<span>
+												<div class="img">
+													<img src="images/festival_15/head0.png" alt="">
+												</div>
+												<div class="right">
+													<p class="p1">申请优秀设请优秀设请优秀设计团队</p>
+													<p class="cont">撒旦发射点撒旦发射点撒旦发射点撒旦发射点撒旦发射点撒旦发射点射点</p>
+													<div class="arrow-shadow"></div>
+												</div>
+											</span>	
+											<span>
+												<div class="img">
+													<img src="images/festival_15/head0.png" alt="">
+												</div>
+												<div class="right">
+													<p class="p1">申请优秀设请优秀设请优秀设计团队</p>
+													<p class="cont">撒旦发射点撒旦发射点撒旦发射点撒旦发射点撒旦发射点撒旦发射点射点</p>
+													<div class="arrow-shadow"></div>
+												</div>
+											</span>	
+										</li>
+							</ul>
+							<ul class="nav_list0 cl">
+							</ul>
+						</div>
+						<div class="more more_1">
+									展开查看更多
+						</div>
+					</div>
+				</div>
+				<!-- 候选培训机构 -->
+				<div class="training">
+					<div class="title"></div>
+					<div class="cont">
+						<p>
+							<b>参赛条件 ： </b>
+							正规培训机构，UI中国用户名为有机构名，并在UI中国上有10个以上作品参考。
+						</p>
+						<p>
+							<b>获奖名额 ：</b> 
+							入围机构10家，获奖机构5家。
+						</p>
+						<p>
+							<b>奖&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;励 ：</b>  
+							UI中国招生/推广特权，UI中国优秀培训机构荣誉，UI中国年度盛宴现场颁发的证书和奖杯。
+						</p>
+						<a href="javascript:;" class="peixun_parent" title="">申请优秀培训机构</a>
+					</div>
+					<div class="training_list">
+						<div class="training_list_cont">
+							<span>
+								<div class="warp_main">
+									<div class="up">
+										<div class="img_bg">
+											<img src="images/festival_15/peixunbg.png" alt="">
+										</div>
+										<div class="train_cont">
+											<a href="javascript:;" class="train_head">
+												<img src="images/festival_15/head0.png" alt="">
+											</a>
+											<p class="p1">asdfadsf</p>
+											<p class="p2">
+												飒沓飒飒大大扫扫地飒沓飒飒大大扫扫地飒沓飒飒大大飒沓飒飒大大扫扫地飒沓飒飒大大扫扫地飒沓飒飒大大。
+											</p>
+										</div>
+									</div>
+									<div class="up down">
+										<div class="img_bg">
+											<img src="images/festival_15/peixunbg.png" alt="">
+										</div>
+										<div class="train_cont">
+											<a href="javascript:;" class="train_head">
+												<img src="images/festival_15/head0.png" alt="">
+											</a>
+											<p class="p1">asdfadsf</p>
+											<p class="p2">
+												飒沓飒飒大大扫扫地飒沓飒飒大大扫扫地飒沓飒飒大大飒沓飒飒大大扫扫地飒沓飒飒大大扫扫地飒沓飒飒大大。
+											</p>
+										</div>
+									</div>
+								</div>
+							</span>
+							<span>
+								<div class="warp_main">
+									<div class="up">
+										<div class="img_bg">
+											<img src="images/festival_15/peixunbg.png" alt="">
+										</div>
+										<div class="train_cont">
+											<a href="javascript:;" class="train_head">
+												<img src="images/festival_15/head0.png" alt="">
+											</a>
+											<p class="p1">asdfadsf</p>
+											<p class="p2">
+												飒沓飒飒大大扫扫地飒沓飒飒大大扫扫地飒沓飒飒大大飒沓飒飒大大扫扫地飒沓飒飒大大扫扫地飒沓飒飒大大。
+											</p>
+										</div>
+									</div>
+									<div class="up down">
+										<div class="img_bg">
+											<img src="images/festival_15/peixunbg.png" alt="">
+										</div>
+										<div class="train_cont">
+											<a href="javascript:;" class="train_head">
+												<img src="images/festival_15/head0.png" alt="">
+											</a>
+											<p class="p1">asdfadsf</p>
+											<p class="p2">
+												飒沓飒飒大大扫扫地飒沓飒飒大大扫扫地飒沓飒飒大大飒沓飒飒大大扫扫地飒沓飒飒大大扫扫地飒沓飒飒大大。
+											</p>
+										</div>
+									</div>
+								</div>
+							</span>
+							<span>
+								<div class="warp_main">
+									<div class="up">
+										<div class="img_bg">
+											<img src="images/festival_15/peixunbg.png" alt="">
+										</div>
+										<div class="train_cont">
+											<a href="javascript:;" class="train_head">
+												<img src="images/festival_15/head0.png" alt="">
+											</a>
+											<p class="p1">asdfadsf</p>
+											<p class="p2">
+												飒沓飒飒大大扫扫地飒沓飒飒大大扫扫地飒沓飒飒大大飒沓飒飒大大扫扫地飒沓飒飒大大扫扫地飒沓飒飒大大。
+											</p>
+										</div>
+									</div>
+									<div class="up down">
+										<div class="img_bg">
+											<img src="images/festival_15/peixunbg.png" alt="">
+										</div>
+										<div class="train_cont">
+											<a href="javascript:;" class="train_head">
+												<img src="images/festival_15/head0.png" alt="">
+											</a>
+											<p class="p1">asdfadsf</p>
+											<p class="p2">
+												飒沓飒飒大大扫扫地飒沓飒飒大大扫扫地飒沓飒飒大大飒沓飒飒大大扫扫地飒沓飒飒大大扫扫地飒沓飒飒大大。
+											</p>
+										</div>
+									</div>
+								</div>
+							</span>
+						</div>
+						<div class="training_list_cont_z">
+							<ul class="list cl">
+								<li>
+									<span>
+										<div class="warp_main">
+											<div class="up">
+												<div class="img_bg">
+													<img src="images/festival_15/peixunbg.png" alt="">
+												</div>
+												<div class="train_cont">
+													<a href="javascript:;" class="train_head">
+														<img src="images/festival_15/head0.png" alt="">
+													</a>
+													<p class="p1">asdfadsf</p>
+													<p class="p2">
+														飒沓飒飒大大扫扫地飒沓飒飒大大扫扫地飒沓飒飒大大飒沓飒飒大大扫扫地飒沓飒飒大大扫扫地飒沓飒飒大大。
+													</p>
+												</div>
+											</div>
+											<div class="up down">
+												<div class="img_bg">
+													<img src="images/festival_15/peixunbg.png" alt="">
+												</div>
+												<div class="train_cont">
+													<a href="javascript:;" class="train_head">
+														<img src="images/festival_15/head0.png" alt="">
+													</a>
+													<p class="p1">asdfadsf</p>
+													<p class="p2">
+														飒沓飒飒大大扫扫地飒沓飒飒大大扫扫地飒沓飒飒大大飒沓飒飒大大扫扫地飒沓飒飒大大扫扫地飒沓飒飒大大。
+													</p>
+												</div>
+											</div>
+										</div>
+									</span>
+									<span>
+										<div class="warp_main">
+											<div class="up">
+												<div class="img_bg">
+													<img src="images/festival_15/peixunbg.png" alt="">
+												</div>
+												<div class="train_cont">
+													<a href="javascript:;" class="train_head">
+														<img src="images/festival_15/head0.png" alt="">
+													</a>
+													<p class="p1">asdfadsf</p>
+													<p class="p2">
+														飒沓飒飒大大扫扫地飒沓飒飒大大扫扫地飒沓飒飒大大飒沓飒飒大大扫扫地飒沓飒飒大大扫扫地飒沓飒飒大大。
+													</p>
+												</div>
+											</div>
+											<div class="up down">
+												<div class="img_bg">
+													<img src="images/festival_15/peixunbg.png" alt="">
+												</div>
+												<div class="train_cont">
+													<a href="javascript:;" class="train_head">
+														<img src="images/festival_15/head0.png" alt="">
+													</a>
+													<p class="p1">asdfadsf</p>
+													<p class="p2">
+														飒沓飒飒大大扫扫地飒沓飒飒大大扫扫地飒沓飒飒大大飒沓飒飒大大扫扫地飒沓飒飒大大扫扫地飒沓飒飒大大。
+													</p>
+												</div>
+											</div>
+										</div>
+									</span>
+								</li>
+								<li>
+									<span>
+										<div class="warp_main">
+											<div class="up">
+												<div class="img_bg">
+													<img src="images/festival_15/peixunbg.png" alt="">
+												</div>
+												<div class="train_cont">
+													<a href="javascript:;" class="train_head">
+														<img src="images/festival_15/head0.png" alt="">
+													</a>
+													<p class="p1">asdfadsf</p>
+													<p class="p2">
+														飒沓飒飒大大扫扫地飒沓飒飒大大扫扫地飒沓飒飒大大飒沓飒飒大大扫扫地飒沓飒飒大大扫扫地飒沓飒飒大大。
+													</p>
+												</div>
+											</div>
+											<div class="up down">
+												<div class="img_bg">
+													<img src="images/festival_15/peixunbg.png" alt="">
+												</div>
+												<div class="train_cont">
+													<a href="javascript:;" class="train_head">
+														<img src="images/festival_15/head0.png" alt="">
+													</a>
+													<p class="p1">asdfadsf</p>
+													<p class="p2">
+														飒沓飒飒大大扫扫地飒沓飒飒大大扫扫地飒沓飒飒大大飒沓飒飒大大扫扫地飒沓飒飒大大扫扫地飒沓飒飒大大。
+													</p>
+												</div>
+											</div>
+										</div>
+									</span>
+									<span>
+										<div class="warp_main">
+											<div class="up">
+												<div class="img_bg">
+													<img src="images/festival_15/peixunbg.png" alt="">
+												</div>
+												<div class="train_cont">
+													<a href="javascript:;" class="train_head">
+														<img src="images/festival_15/head0.png" alt="">
+													</a>
+													<p class="p1">asdfadsf</p>
+													<p class="p2">
+														飒沓飒飒大大扫扫地飒沓飒飒大大扫扫地飒沓飒飒大大飒沓飒飒大大扫扫地飒沓飒飒大大扫扫地飒沓飒飒大大。
+													</p>
+												</div>
+											</div>
+											<div class="up down">
+												<div class="img_bg">
+													<img src="images/festival_15/peixunbg.png" alt="">
+												</div>
+												<div class="train_cont">
+													<a href="javascript:;" class="train_head">
+														<img src="images/festival_15/head0.png" alt="">
+													</a>
+													<p class="p1">asdfadsf</p>
+													<p class="p2">
+														飒沓飒飒大大扫扫地飒沓飒飒大大扫扫地飒沓飒飒大大飒沓飒飒大大扫扫地飒沓飒飒大大扫扫地飒沓飒飒大大。
+													</p>
+												</div>
+											</div>
+										</div>
+									</span>
+								</li>
+									<li>
+									<span>
+										<div class="warp_main">
+											<div class="up">
+												<div class="img_bg">
+													<img src="images/festival_15/peixunbg.png" alt="">
+												</div>
+												<div class="train_cont">
+													<a href="javascript:;" class="train_head">
+														<img src="images/festival_15/head0.png" alt="">
+													</a>
+													<p class="p1">asdfadsf</p>
+													<p class="p2">
+														飒沓飒飒大大扫扫地飒沓飒飒大大扫扫地飒沓飒飒大大飒沓飒飒大大扫扫地飒沓飒飒大大扫扫地飒沓飒飒大大。
+													</p>
+												</div>
+											</div>
+											<div class="up down">
+												<div class="img_bg">
+													<img src="images/festival_15/peixunbg.png" alt="">
+												</div>
+												<div class="train_cont">
+													<a href="javascript:;" class="train_head">
+														<img src="images/festival_15/head0.png" alt="">
+													</a>
+													<p class="p1">asdfadsf</p>
+													<p class="p2">
+														飒沓飒飒大大扫扫地飒沓飒飒大大扫扫地飒沓飒飒大大飒沓飒飒大大扫扫地飒沓飒飒大大扫扫地飒沓飒飒大大。
+													</p>
+												</div>
+											</div>
+										</div>
+									</span>
+									<span>
+										<div class="warp_main">
+											<div class="up">
+												<div class="img_bg">
+													<img src="images/festival_15/peixunbg.png" alt="">
+												</div>
+												<div class="train_cont">
+													<a href="javascript:;" class="train_head">
+														<img src="images/festival_15/head0.png" alt="">
+													</a>
+													<p class="p1">asdfadsf</p>
+													<p class="p2">
+														飒沓飒飒大大扫扫地飒沓飒飒大大扫扫地飒沓飒飒大大飒沓飒飒大大扫扫地飒沓飒飒大大扫扫地飒沓飒飒大大。
+													</p>
+												</div>
+											</div>
+											<div class="up down">
+												<div class="img_bg">
+													<img src="images/festival_15/peixunbg.png" alt="">
+												</div>
+												<div class="train_cont">
+													<a href="javascript:;" class="train_head">
+														<img src="images/festival_15/head0.png" alt="">
+													</a>
+													<p class="p1">asdfadsf</p>
+													<p class="p2">
+														飒沓飒飒大大扫扫地飒沓飒飒大大扫扫地飒沓飒飒大大飒沓飒飒大大扫扫地飒沓飒飒大大扫扫地飒沓飒飒大大。
+													</p>
+												</div>
+											</div>
+										</div>
+									</span>
+								</li>
+							</ul>
+							<ul class="nav_list1 cl">
+							</ul>
+						</div>
+						<div class="more more_2">
+									展开查看更多
+						</div>
+					</div>
+				</div>
+				<!-- 评选规则 -->
+				<div class="rule">
+					<div class="title"></div>
+					<div class="rule_list">
+						<p class="p1">团队、个人或机构申请后，UI中国审核通过后方可参与评选。</p>
+						<p class="img">
+							<img src="images/festival_15/rule_bg.png" alt="">
+						</p>
+						<p class="tit">
+							-&nbsp;&nbsp;&nbsp;&nbsp;大 众 投 票 期 间&nbsp;&nbsp;&nbsp;&nbsp;-
+ 						</p>
+ 						<p class="p2">
+ 							每个UI中国用户，每天可对每个奖项可投3票，每天24:00未投选则视为放弃当天投票权。
+ 						</p>
+ 						<p class="p3">
+ 							一个UI中国用户名仅能申请一个奖项
+ 						</p>
+					</div>
+				</div>
+				<!-- 底部 -->
+				<div class="foot">
+					<i class="icon-uimini"></i>
+				</div>
+				<!-- 右侧菜单126 -->
+				<div class="festival_tab">
+					<div class="up">
+						<ul>
+							<li class="frist"></li>
+							<li>
+								<a id="nav1" href="javascript:;" title="">
+									比赛流程
+								</a>
+							</li>
+							<li>
+								<a id="nav2" href="javascript:;" title="">
+									申请优秀团队
+								</a>
+							</li>
+							<li>
+								<a id="nav3" href="javascript:;" title="">
+									申请优秀设计师
+								</a>
+							</li>
+							<li>
+								<a id="nav4" href="javascript:;" title="">
+									申请优秀培训机构
+								</a>
+							</li>
+							<li>
+								<a id="nav5" href="javascript:;" title="">
+									评选规则
+								</a>
+							</li>
+							<li>
+								<a href="javascript:;" title="">
+									活动讨论
+								</a>
+							</li>
+							<li class="last"></li>
+						</ul>
+					</div>
+					<a href="javascript:;" title="" class="down">
+						回到顶部
+					</a>
+				</div><!-- 菜单结束 -->
+			</div><!-- warp结束 -->
+			<!-- 弹框 -->
+			<div class="mask"></div>
+			<div class="team_box">
+				<div class="team_main">
+					<div class="close_box">
+						<i class="icon-close"></i>
+					</div>
+					<div class="p1"><span>申请 优秀设计团队奖</span><em>均为必填项</em></div>
+					<em>请认真填写表格内容，并保证您所填写的内容真实有效。</em>
+					<form action="" method="get" >
+						<div class="team_name cl">
+							<span class="z">团队名称:</span>
+							<div class="z">
+								<input type="text" name="" value="" placeholder="">
+							</div>
+							<a class="z" href="javascript:;">修改</a>
+						</div>
+						<div class="team_info cl">
+							<span class="z">团队简介:</span>
+							<div class="z">
+								<textarea name=""></textarea>
+							</div>
+						</div>
+						<div class="cl contacts">
+							<span class="z">联系人:</span>
+							<div class="z">
+								<input type="text" name="" value="" placeholder="">
+							</div>
+						</div>
+						<div class="cl contact_style">
+							<span class="z">联系方式:</span>
+							<div class="z qq">
+								<input type="text" name="" value="" placeholder="填写常用QQ">
+							</div>
+							<div class="z phone">
+								<input type="text" name="" value="" placeholder="填写手机号码">
+							</div>
+						</div>
+						<div class="cl contact_style">
+							<span class="z">上传团队宣传图册:</span>
+						</div>
+						<div class="img_up" id="picfile">
+            					<div class="upload-icon">
+                					<input type="file" accept=".jpg,.gif,.png" name="files[]" style="font-size:80px;" multiple="multiple" class="upload-icon-file" title="上传">
+                					<i class="icon-add-round"></i>
+            					</div>
+            					<p class="tit">上传</p>
+            					<p >格式:JPG,PNG,GIF</p>
+            					<p >大小:小于2M</p>
+						</div>
+						<em>尺寸：（200*400）上传后放在展示页头像背景位。</em>
+						<button type="submit">确认报名</button>
+						<input type="hidden" name="prize" value="1" placeholder="">
+					</form>
+				</div>
+			</div>
+			<!--设计师奖 -->
+			<div class="designer_box">
+				<div class="team_main">
+					<div class="close_box">
+						<i class="icon-close"></i>
+					</div>
+					<div class="p1"><span>申请 优秀设计师奖</span><em>均为必填项</em></div>
+					<em>请认真填写表格内容，并保证您所填写的内容真实有效。</em>
+					<form action="" method="get" >
+						<div class="team_name cl">
+							<span class="z">设 计 师:</span>
+							<div class="z designer">
+								<input type="text" name="" value="" placeholder="">
+							</div>
+						</div>
+						<div class="team_info cl">
+							<span class="z">介绍自己:</span>
+							<div class="z designer">
+								<textarea name=""></textarea>
+							</div>
+						</div>
+						<p>（以下信息仅在获奖时联系使用）</p>
+						<div class="cl contacts">
+							<span class="z">姓   &nbsp;     名:</span>
+							<div class="z">
+								<input type="text" name="" value="" placeholder="">
+							</div>
+						</div>
+						<div class="cl contact_style">
+							<span class="z">联系方式:</span>
+							<div class="z qq designer">
+								<input type="text" name="" value="" placeholder="填写常用QQ">
+							</div>
+							<div class="z phone designer">
+								<input type="text" name="" value="" placeholder="填写手机号码">
+							</div>
+						</div>
+						<button type="submit">确认报名</button>
+						<input type="hidden" name="prize" value="2" placeholder="">
+					</form>
+				</div>
+			</div>
+			<!-- peixun奖 -->
+			<div class="peixun_box">
+				<div class="team_main">
+					<div class="close_box">
+						<i class="icon-close"></i>
+					</div>
+					<div class="p1"><span>申请 优秀培训机构奖</span><em>均为必填项</em></div>
+					<em>请认真填写表格内容，并保证您所填写的内容真实有效。</em>
+					<form action="" method="get" >
+						<div class="team_name cl">
+							<span class="z">机构名称:</span>
+							<div class="z">
+								<input type="text" name="" value="" placeholder="">
+							</div>
+							<a class="z" href="javascript:;">修改</a>
+						</div>
+						<div class="team_info cl">
+							<span class="z">机构简介:</span>
+							<div class="z">
+								<textarea name=""></textarea>
+							</div>
+						</div>
+						<div class="cl contacts">
+							<span class="z">联 系 人:</span>
+							<div class="z">
+								<input type="text" name="" value="" placeholder="">
+							</div>
+						</div>
+						<div class="cl contact_style">
+							<span class="z">联系方式:</span>
+							<div class="z qq">
+								<input type="text" name="" value="" placeholder="填写常用QQ">
+							</div>
+							<div class="z phone">
+								<input type="text" name="" value="" placeholder="填写手机号码">
+							</div>
+						</div>
+						<div class="img_up" id="picfile">
+            					<div class="upload-icon">
+                					<input type="file" accept=".jpg,.gif,.png" name="files[]" style="font-size:80px;" multiple="multiple" class="upload-icon-file" title="上传">
+                					<i class="icon-add-round"></i>
+            					</div>
+            					<p class="tit">上传</p>
+            					<p >格式:JPG,PNG,GIF</p>
+            					<p >大小:小于2M</p>
+						</div>
+						<em>尺寸：（515*280）上传后放在展示页头像背景位。</em>
+						<button type="submit">确认报名</button>
+						<input type="hidden" name="prize" value="3" placeholder="">
+					</form>
+				</div>
+			</div>
+			<!-- 弹框END -->
+		</div>
+	</div>
+</body>
+ <script type="text/javascript" src="js/festival_15.js"></script>
+  <script type="text/javascript" src="js/z_lunbo.js"></script>
+</html>
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,108 @@
+﻿body{background: url(../img/doudizhu/all_bg.png);background-repeat: repeat; }
+.d_content{position: relative;text-align: center;}
+.cont_bg1{height:382px;background: url(../img/doudizhu/d_top00.png) top center no-repeat;}
+.cont_bg2{height:461px;background: url(../img/doudizhu/d_top01.png) top center no-repeat;}
+.warp_1180{height:100%;width:1180px; position: absolute;top:0;left: 50%;margin-left: -590px;text-align: center;}
+.entrance{width: 165px;height: 105px;position: absolute; top:124px;left: 76px;text-align: center;}
+.gdtop{position: fixed;top:124px;left:50%;margin-left: -650px; transition: left .5s;}
+.fix{position: absolute;top:-124px;left:-22px;z-index: 1;}
+.fix2{position: absolute;top:-20px;left:-2px;z-index: 2;}
+.fix2 em{font-size: 12px;color: #fa6221;display: block;margin-top: 10px;}
+.entrance a:hover{color: #fff;}
+.enterprises{margin-top: 7px; width: 137px;height: 40px;border-radius: 12px;display: inline-block;background-color: #f8bb16;color: #fff;font-size: 16px;line-height: 40px;}
+/*报名按钮*/
+.timer{color: #fff;display: inline-block;margin-top:280px;}
+.timer h1{font-size: 20px;}
+.timer p{color: #fff;font-size: 16px;margin-top: 20px;}
+/*活动时间*/
+.introduce{width: 593px;height: 158px;margin-top:75px;text-align: center;color:#00363f;font-size: 18px;display: inline-block;line-height: 1.8; }
+/*活动小引言*/
+.warp_cont{width: 944px;background: #06a095;margin: 0 auto;text-align: left;margin-top: 40px;
+  position: relative;border-radius: 25px;padding: 87px 0 64px 0;}
+  .warp_cont .d_title{position: absolute;top:0;left: 50%;margin-left:-180px;width: 360px;height: 58px;
+    background: url(../img/doudizhu/btn_bg.png) no-repeat;text-align: center;line-height: 58px;font-size: 24px;color: #ffde5b;letter-spacing: 2px;}
+    .warp_cont .bg_right{position:absolute;right:-25px;top:-25px;width:100px;height:84px;background: url(../img/doudizhu/bg_right.png) no-repeat;}
+    .warp_cont .bg_left{position:absolute;left:-25px;top:-25px;width:100px;height:84px;background: url(../img/doudizhu/bg_left.png) no-repeat;}
+    .warp_cont .main_cont{margin-left: 115px;}
+    .warp_cont .main_cont >p > span{display: inline-block;border-radius: 50%;background-color:#ffde5b;width: 20px;height: 20px;text-align: center;line-height: 20px;color: #04a092;margin-right: 20px; }
+    .warp_cont .main_cont > p{display: inline-block;font-size: 16px;color: #fff;  line-height: 2;}
+    /*活动内容*/
+    .bg_on{background: url(../img/doudizhu/tit_bg.png);background-repeat: repeat-x;background-repeat: repeat; }
+    .warp_cont .main_{margin-left: 126px;width: 800px;}
+    .warp_cont .main_ ul li{width: 322px;height: 456px;background:#fff;float: left;margin-right: 50px;margin-bottom: 55px;border-radius: 15px;text-align: center;}
+    .warp_cont .main_ ul li.on{margin-bottom: 0px;}
+    .warp_cont .main_ ul li .d_portrait{width: 120px;height: 120px;overflow-y: hidden;border-radius: 50%;border:1px solid #08bdb8; display:block;margin: 0 auto; margin-top: 40px;}
+    .warp_cont .main_ ul li .d_portrait img{width: 100%;height: 100%;}
+    .warp_cont .main_ ul li>.d_zw{display: block;margin: 0 auto;text-align:center;margin-top: 15px;}
+    .warp_cont .main_ ul li .d_zw span{font-size: 10px;color: #95a5a6;background: #e0e7eb;display:inline-block;border-radius:15px;padding: 0px 8px 0px 8px;}
+    .warp_cont .main_ ul li .d_zhi{font-size: 24px;color: #09cdc5;margin-top: 8px;}
+    .warp_cont .main_ ul li .d_dz{color:#34495e;font-size: 18px;margin-top: 10px;}
+    .warp_cont .main_ ul li .d_jy{margin-top: 0;color:#34495e;font-size: 18px;}
+    .warp_cont .main_ ul li .d_jn{font-size: 14px;color: #95a5a6;width: 233px;height: 66px;overflow-y: hidden;margin: 0 auto;margin-top: 10px;}
+    .warp_cont .main_ ul li .d_jn em{width:177px;text-align: left;}
+    .warp_cont .main_ ul li .d_jn b{width: 56px;}
+    .warp_cont .main_ ul li .bg_bx{  margin-top: -50px;width: 322px;height: 131px;background: url(../img/doudizhu/bg_bx.png) no-repeat;position: relative;}
+    .warp_cont .main_ ul li .bg_bx .bg_bxz{position: absolute;bottom: 23px;left: 12px;color: #fefefe;font-size: 16px;background: #34495e;padding: 5px 35px 5px 35px;border-radius: 20px;}
+    .warp_cont .main_ ul li .bg_bx .bg_bxy{position: absolute;bottom: 23px;right: 12px;color: #fefefe;font-size: 16px;padding: 5px 35px 5px 35px;border-radius: 20px;background: #e74c3c;}
+    /*地主大合影*/
+    /*底部*/
+    .last_i{width:63px; height:69px;margin: 0 auto;display: block;padding:28px 0 28px 0;}
+    .last_i .icon-uimini{color:#56e5e0;font-size: 77px;  margin-left: -8px;}
+    /*弹出层样式*/
+    .ov{overflow-y: hidden;}
+    .oe{overflow-y:scroll;}
+    /*.scroll_{}*/
+    #t{display:none;overflow-y: auto;height:1000px;position: fixed;z-index: 9999; top: 0; right: 0; bottom: 0; left: 0;}
+    .mask{display: none; height:100%; width:100%;position:fixed; top:0;left: 0; z-index:1000;opacity:0.5; filter: alpha(opacity=50); background-color:#000;}
+    .Bomb_box{position:absolute;left:50%;top:20px;margin-left: -490px; z-index:1001;background-color: #fff;padding: 40px;width: 900px;  margin-bottom: 400px;}
+    .btn_x{cursor: pointer;width: 40px;height: 40px;position: absolute;right: 0;top:0;}
+    .Bomb_main{text-align: left;}
+    .Bomb_box p{text-align: left;}
+    .Bomb_box .works-cont img { display: block; margin: 0 auto 20px; max-width: 100%; overflow: hidden; }
+    .Bomb_main .video-box { width: 720px; height: 540px; margin: 0 auto;}
+/*<!-- 我的简历弹框 -->*/
+#t1{display: none;}
+#t2{display: none;}
+.mask1{height:100%; width:100%;position:fixed; top:0;left: 0; z-index:1000;opacity:0.5; filter: alpha(opacity=50); background-color:#000;}
+.Bomb_box1{position: fixed;left:50%;top:95px; margin-left: -320px; width: 650px;padding: 75px 0 58px 0; z-index:1001;background-color: #fff;border-radius: 25px;}
+.btn_x1{cursor: pointer;width: 30px;height: 30px;position:absolute; right:30px;top:30px;}
+.bob_cont{text-align: center;}
+.bob_cont>.pq1{display: block;text-align: center;font-size: 30px;color: #017a3d;}
+.bob_cont>.pq2{display: block;text-align: center;font-size: 24px;color: #95a5a6;margin-top: 20px;}
+.bob_cont>a{width: 160px;height: 50px;text-align: center;line-height: 50px;display: inline-block;background: #3498db;color: #fff;font-size: 16px;margin-top: 43px;}
+
+/*头像背景*/
+.topbg_img span.duser_name {
+    width: 80px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #fff;
+    font-size: 18px;
+    padding: 20px 0 0 20px;
+    z-index: 1;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.topbg_img img.imgbg {
+    width: 100%;
+    height: 110px;
+    border-radius: 15px 15px 0px 0px;
+    -webkit-mask-image: -webkit-linear-gradient(bottom,#000000 30%,transparent 200%,transparent);
+    -moz-mask-image: -webkit-linear-gradient(bottom,#000000 60%,transparent 200%,transparent);
+}
+.topbg_img i.icon-uimini {
+    font-size: 22px;
+    color: #fff;
+    position: absolute;
+    top: 22px;
+    right: 20px;
+    opacity: .9;
+    z-index: 1;
+}
+.list_bot{position: absolute;top:8px;left: 0px;}
+.topbg_img{border-radius: 15px;}
+
+
+

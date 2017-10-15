@@ -1,0 +1,92 @@
+﻿/*!
+ * description: 报名
+ * require: uicn.css
+ * relevancy: 
+ *
+ * date: 2016-06-17
+ * update: (2015-XX-XX XX:XX)
+ */
+ body{background-color: #fff;}
+ input:focus,
+textarea:focus {
+    outline: none;
+    border: none;
+    box-shadow:none;
+}
+/*头部*/
+.banner {position:relative;min-width:1180px; margin: 0 auto;height: 472px; background: url("../sign/bg_header.png") no-repeat center center #f77283;text-align: center;}
+.banner .h1{font-size: 67px;letter-spacing: 10px; color: #fff;padding-top:90px;}
+.banner .btn_head{width: 452px;height: 42px;display: inline-block;background-color: #fff;color: #f87a81;font-size: 23px;line-height: 40px;box-shadow:0 5px 22px rgba(0, 0, 0, 0.1);}
+.banner .img_header{position: absolute;left:50%;margin-left:-388px;bottom:-297px;width:776px;height: 509px;  }
+/*内容*/
+.warp_main{width: 960px;margin:0 auto;}
+.tit_warp{text-align: center;padding-top:325px;padding-bottom: 120px;}
+.tit_warp p{padding-bottom:38px;font-size: 18px;color:#fd8483; }
+.tit_warp p.bot{padding-bottom:0px;}
+.tit_warp p.bots{padding-bottom: 5px;line-height: 50px;}
+.tit_warp p>span{height: 2px;width:10px;display: inline-block;background: #fe7a79;}
+.tit_warp p.title{font-size: 27px;color: #ff7472;font-weight: 400;letter-spacing: 2px;padding-bottom: 48px;}
+.tit_warp .tit_btn a{width: 178px;height: 48px;line-height: 48px;font-size:16px;font-weight: 400;  border: 1px solid #ff7472;color:#ff7472;border-radius: 2px;display: inline-block; }
+/*主讲人介绍*/
+.Speaker{text-align: left;}
+.Speaker .info{margin-left: 40px;}
+.Speaker .title{width:60px;font-size: 14px;font-weight: 700;color:#3e3e3e;line-height: 27px;}
+.Speaker .count.on{padding-bottom:50px; }
+.Speaker .count .tit .left{color: #ff7472;font-size:16px; font-weight:400;}
+.Speaker .count .tit .right{color: #ff7472;font-size: 12px;margin-left:8px;font-weight:400; }
+.Speaker .count .p1{width: 356px;color: #3e3e3e;font-size: 14px;line-height: 30px;padding-bottom: 10px;}
+.Speaker .count .p2{width:544px;color: #3e3e3e;font-size: 14px;line-height: 30px}
+.Speaker .head {width: 140px;height: 140px;}
+.Speaker .head .img_tony img{padding-bottom: 97px;}
+/*活动内容*/
+.active{padding-top: 110px;padding-bottom: 140px;}
+.active .title{width:60px;font-size: 14px;font-weight: 700;color:#3e3e3e;line-height: 27px;}
+.active .time{margin-left:40px;width: 364px;}
+.active .time .tit{color: #ff7472;font-size:16px; font-weight:400;padding-bottom: 30px;}
+.active .time .time_main .img_schedule{height:179px;width: 7px; }
+.active .time .time_main .timer{width: 250px;margin-left: 10px;margin-top: -7px;}
+.active .time .time_main .timer .p0{padding-bottom: 30px;}
+.active .time .time_main .timer .p1{padding-bottom: 37px;}
+.active .time .time_main .timer span{line-height: 25px;font-size: 12px;color:#ff7472;float: left;}
+.active .time .time_main .timer em{line-height: 25px; font-size: 12px;color:#3e3e3e;float: left;margin-left: 10px;}
+.active .main{width: 390px;margin-left: 60px;}
+.active .main ul li{margin-bottom: 5px;}
+.active .main ul li span{margin-right: 38px; float: left; font-size: 14px;font-weight: 700;color: #3e3e3e;line-height: 27px;}
+.active .main ul li em{float: left;font-size: 12px;color: #3e3e3e;line-height: 25px;width: 282px;}
+.active .main ul li a{float: left;font-size: 12px;color: #ff7472;line-height: 25px;}
+/*底部*/
+.foot{width: 100%;height: 155px;background-color: #f2f2f2;text-align: center;}
+.foot .icon{display: inline-block;padding-top: 44px;}
+.foot .lol img{width: 115px;height: 55px;}
+.foot .icon-uimini{ width: 55px;height: 55px;color: #2c96de;font-size: 55px;margin-left: 25px;}
+
+
+.bomb{z-index:50;background: rgba(0,0,0,.4);visibility:hidden;position:fixed;width:100%;top:0;bottom:0;left:0; opacity: 0;}
+.showed{visibility: visible;opacity: 1;transition:all .4s}
+.showed .reg-main{
+    -webkit-transform: rotateY(0deg);
+    -moz-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+    transition: all .8s;
+    -webkit-transition: all .8s;
+    -moz-transition: all .8s;
+    }
+.reg-main{width:555px;background: #fff;border-radius: 2px;position: absolute;
+    left:50%;top:50%;margin-top:-300px;margin-left: -255px;transform:rotateY(-100deg);-webkit-transform:rotateY(-100deg);-moz-transform:rotateY(-100deg);transition:all .8s;-webkit-transition:all .8s;-moz-transition:all .8s;}
+.dt .reg-main{width:800px;height: 600px;margin-left: -400px;}
+.reg-main form{width:395px;margin:30px auto;}
+.reg-main h1{font-size: 24px;color:#424040;font-weight: normal;}
+.reg-main h1 em {font-size: 14px; color: red; margin-left: 10px;}
+.reg-main p{font-size:12px;color:#858585;margin-top: 10px; }
+.reg-main li{margin-top: 30px;}
+.reg-main strong{font-size:14px;color:#858585;float:left;width:102px;line-height:32px;font-weight: normal;}
+.reg-main .utalk-input{border:0;border-bottom: 1px solid #858585;color:#424040;width:290px;padding:5px 10px;box-sizing: border-box;margin-left:-8px;font-size:14px;}
+.reg-main .utalk-submit{margin-top:10px;font-size: 12px; color:#424040;border:1px solid #000;background: #fff;height:40px;width:100px; cursor: pointer;}
+.reg-main li i{color:red;}
+.reg-main i.colse{background: url("../sign/colse.png") no-repeat center center;width:16px;height:16px;position: absolute;right:10px;top:10px; cursor: pointer;padding:10px;}
+
+#allmap{width:800px;height: 600px;margin: 0 auto;}
+
+
+
